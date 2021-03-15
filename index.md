@@ -41,7 +41,7 @@
 | ShellBags Explorer | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/ShellBagsExplorer.zip)| GUI for browsing shellbags data. Handles locked files
 | SQLECmd | [0.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SQLECmd.zip)| Find and process SQLite files according to your needs with maps!
 | SumECmd | [0.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SumECmd.zip)| Process Microsoft User Access Logs found under 'C:\Windows\System32\LogFiles\SUM'
-| SrumECmd | [0.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SrumECmd.zip)| Process SRUDB.dat and (optionally) SOFTWARE hive for network, process, and energy info!
+| SrumECmd | [0.5.0.2](https://f001.backblazeb2.com/file/EricZimmermanTools/SrumECmd.zip)| Process SRUDB.dat and (optionally) SOFTWARE hive for network, process, and energy info!
 | Timeline Explorer | [1.3.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/TimelineExplorer.zip) | View CSV and Excel files, filter, group, sort, etc. with ease
 | VSCMount |[1.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/VSCMount.zip) | Mount all VSCs on a drive letter to a given mount point
 | WxTCmd | [0.6.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/WxTCmd.zip) | Windows 10 Timeline database parser
