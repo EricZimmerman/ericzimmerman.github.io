@@ -20,6 +20,8 @@
 
 ## Forensic tools
 
+Need everything at once? Here are ALL the tools as a single [ZIP](https://f001.backblazeb2.com/file/EricZimmermanTools/All.zip)
+
 |Name  |Version| Purpose| 
 |--|--|--
 | AmcacheParser | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/AmcacheParser.zip) | Amcache.hve parser with lots of extra features. Handles locked files
