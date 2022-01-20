@@ -31,20 +31,20 @@ Need everything at once? Here are ALL the tools as a single [ZIP](https://f001.b
 | Evtx Explorer/EvtxECmd | [0.6.5.0](https://f001.backblazeb2.com/file/EricZimmermanTools/EvtxExplorer.zip) &vert; na | Event log (evtx) parser with standardized CSV, XML, and json output! Custom maps, locked file support, and more!
 | Hasher | [1.9.3.0](https://f001.backblazeb2.com/file/EricZimmermanTools/hasher.zip) &vert; na| Hash all the things
 | JLECmd | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/JLECmd.zip) &vert; na| Jump List parser
-| JumpList Explorer |na &vert; [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/JumpListExplorer.zip) | GUI based Jump List viewer 
+| JumpList Explorer | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/JumpListExplorer.zip) &vert; na | GUI based Jump List viewer 
 | LECmd  | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/LECmd.zip) &vert; na| Parse lnk files
 | MFTECmd |[0.5.0.1](https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip) &vert; na| $MFT, $Boot, $J, $SDS, and $LogFile (coming soon) parser. Handles locked files
-| MFTExplorer |na &vert; [0.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/MFTExplorer.zip) | Graphical $MFT viewer
+| MFTExplorer | [0.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/MFTExplorer.zip) &vert; na | Graphical $MFT viewer
 | PECmd  | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/PECmd.zip) &vert; na| Prefetch parser
 | RBCmd  | [0.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/RBCmd.zip) &vert; na| Recycle Bin artifact (INFO2/$I) parser
 | RecentFileCacheParser | [1.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/RecentFileCacheParser.zip) &vert;na| RecentFileCache parser
-| Registry Explorer/RECmd | na &vert; [1.6.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip) | Registry viewer with searching, multi-hive support, plugins, and more. Handles locked files
-| SDB Explorer | na &vert; [1.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SDBExplorer.zip) | Shim database GUI
-| ShellBags Explorer |na &vert; [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/ShellBagsExplorer.zip) | GUI for browsing shellbags data. Handles locked files
+| Registry Explorer/RECmd |  [1.6.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip) &vert; na | Registry viewer with searching, multi-hive support, plugins, and more. Handles locked files
+| SDB Explorer |  [1.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SDBExplorer.zip) &vert; na | Shim database GUI
+| ShellBags Explorer | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/ShellBagsExplorer.zip) &vert; na| GUI for browsing shellbags data. Handles locked files
 | SQLECmd | [0.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SQLECmd.zip) &vert; na| Find and process SQLite files according to your needs with maps!
-| SumECmd | [0.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SumECmd.zip) &vert; na| Process Microsoft User Access Logs found under 'C:\Windows\System32\LogFiles\SUM'
+| SumECmd | [0.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SumECmd.zip) &vert; na | Process Microsoft User Access Logs found under 'C:\Windows\System32\LogFiles\SUM'
 | SrumECmd | [0.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SrumECmd.zip) &vert; [0.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/SrumECmd.zip) | Process SRUDB.dat and (optionally) SOFTWARE hive for network, process, and energy info!
-| Timeline Explorer |na &vert; [1.3.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/TimelineExplorer.zip)| View CSV and Excel files, filter, group, sort, etc. with ease
+| Timeline Explorer | [1.3.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/TimelineExplorer.zip) &vert; na| View CSV and Excel files, filter, group, sort, etc. with ease
 | VSCMount |[1.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/VSCMount.zip) &vert; na| Mount all VSCs on a drive letter to a given mount point
 | WxTCmd | [0.6.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/WxTCmd.zip) &vert; na| Windows 10 Timeline database parser
 
