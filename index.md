@@ -59,9 +59,9 @@ Need everything at once? Here are ALL the tools as a single [ZIP](https://f001.b
 |Name  |Version| Purpose
 |--|--|--
 | KAPE | [NA](https://learn.duffandphelps.com/kape?utm_campaign=2019_cyberitbn-KAPE-launch&utm_source=kroll&utm_medium=referral&utm_term=kape-gui-blogpost) | Kroll Artifact Parser/Extractor: Flexible, high speed collection of files as well as processing of files. Many many features
-| iisGeoLocate | [2.0.0.2](https://f001.backblazeb2.com/file/EricZimmermanTools/iisGeolocate.zip)| Geolocate IP addresses found in IIS logs, extracts unique IPs, records bad data from logs
-| TimeApp | [NA](https://f001.backblazeb2.com/file/EricZimmermanTools/TimeApp.zip)| A simple app that shows current time (local and UTC) and optionally, public IP address. Great for testing
-| XWFIM | [NA](https://f001.backblazeb2.com/file/EricZimmermanTools/XWFIM.zip) | X-Ways Forensics installation manager
+| iisGeoLocate | [2.0.0.2](https://f001.backblazeb2.com/file/EricZimmermanTools/iisGeolocate.zip) &vert; na | Geolocate IP addresses found in IIS logs, extracts unique IPs, records bad data from logs
+| TimeApp | [NA](https://f001.backblazeb2.com/file/EricZimmermanTools/TimeApp.zip) &vert; na| A simple app that shows current time (local and UTC) and optionally, public IP address. Great for testing
+| XWFIM | [NA](https://f001.backblazeb2.com/file/EricZimmermanTools/XWFIM.zip)  &vert; na | X-Ways Forensics installation manager
 | Get-ZimmermanTools | [NA](https://f001.backblazeb2.com/file/EricZimmermanTools/Get-ZimmermanTools.zip) | PowerShell script to auto discover and update everything above.
 
 
