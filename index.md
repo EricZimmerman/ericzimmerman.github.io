@@ -7,8 +7,8 @@
 
 1. **READ** the [Requirements and troubleshooting](https://ericzimmerman.github.io/#!index.md#Requirements_and_troubleshooting) section!!
 2. Use [Get-ZimmermanTools](https://f001.backblazeb2.com/file/EricZimmermanTools/Get-ZimmermanTools.zip) to download all programs at once and keep your toolset current
-    - Use -Dest to control where the tools ends up, else things end up in same directory as the script (recommended!)
-    - Use -NetVersion to control which flavor of tool you get: 4 for net 4.6.2 and 6 for net 6 (recommended!)
+    - Use **-Dest** to control where the tools ends up, else things end up in same directory as the script (recommended!)
+    - Use **-NetVersion** to control which flavor of tool you get: 4 for net 4.6.2 and 6 for net 6 (recommended!)
 3. All **GUI tools** will be updated to use .net 6 only but the legacy version will be kept in place as well (just not updated anymore)
 4. All **CLI tools** will continue to be built for both net 4.6.2 and net 6
 
