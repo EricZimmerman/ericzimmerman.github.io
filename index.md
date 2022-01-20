@@ -78,7 +78,8 @@ Need everything at once? Here are ALL the tools as a single [ZIP](https://f001.b
 ***
 ## Requirements and troubleshooting
 
- - All software requires at least [Microsoft .net 4.6.2](https://www.microsoft.com/en-us/download/details.aspx?id=53344) or newer! You will get errors running these without at least 4.6.2. When in doubt, install it!
+ - .net 4 software requires at least [Microsoft .net 4.6.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462) or newer! You will get errors running these without at least 4.6.2. When in doubt, install it!
+ - .net 6 software requires at least [Microsoft .net 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) or newer! You will get errors running these without at least 6.0. When in doubt, install it!
  - **DO NOT RUN ANYTHING FOUND HERE FROM 'C:\PROGRAM FILES' DIRECTORY** (unless you run them as administrator)!
  - **DO NOT USE WINDOWS TO EXTRACT THINGS.** Use 7-Zip or Winrar as Windows will block the DLLs!
  - All software is digitally signed. Once you verify the signature as coming from me, any anti-virus hits are false positives. When in doubt, download the files directly from here!
