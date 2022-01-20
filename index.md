@@ -69,7 +69,6 @@ Need everything at once? Here are ALL the tools as a single [ZIP](https://f001.b
 
 |Name  |Version| Purpose
 |--|--|--
-| nlog.config | [NA](https://f001.backblazeb2.com/file/EricZimmermanTools/nlog.config)| Place this in same directory as CLI tools and you can alter the colors used. Good for white background with black font, etc. Do not change anything but the colors.
 | Change log | [NA](https://f001.backblazeb2.com/file/EricZimmermanTools/ChangeLog.txt)| 
 
 
