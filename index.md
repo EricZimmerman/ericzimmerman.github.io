@@ -22,11 +22,11 @@
 
 Need everything at once? Here are ALL the tools as a single [ZIP](https://f001.backblazeb2.com/file/EricZimmermanTools/All.zip)
 
-|Name | <span style="display: inline-block; width:150px">Version (.net 4 \| 6)</span> | Purpose | 
+|Name | <span style="display: inline-block; width:150px">Version (.net 4 &vert; 6)</span> | Purpose | 
 |--|--|--
-| AmcacheParser | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/AmcacheParser.zip) \| X | Amcache.hve parser with lots of extra features. Handles locked files
-| AppCompatCacheParser | [1.4.4.0](https://f001.backblazeb2.com/file/EricZimmermanTools/AppCompatCacheParser.zip) \| X | AppCompatCache aka ShimCache parser. Handles locked files
-| bstrings | [1.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/bstrings.zip) \| X | Find them strings yo. Built in regex patterns. Handles locked files
+| AmcacheParser | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/AmcacheParser.zip) &vert; X | Amcache.hve parser with lots of extra features. Handles locked files
+| AppCompatCacheParser | [1.4.4.0](https://f001.backblazeb2.com/file/EricZimmermanTools/AppCompatCacheParser.zip) &vert; X | AppCompatCache aka ShimCache parser. Handles locked files
+| bstrings | [1.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/bstrings.zip) &vert; X | Find them strings yo. Built in regex patterns. Handles locked files
 | EZViewer | [1.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/EZViewer.zip)| Standalone, zero dependency viewer for .doc, .docx, .xls, .xlsx, .txt, .log, .rtf, .otd, .htm, .html, .mht, .csv, and .pdf. Any non-supported files are shown in a hex editor (with data interpreter!)
 | Evtx Explorer/EvtxECmd | [0.6.5.0](https://f001.backblazeb2.com/file/EricZimmermanTools/EvtxExplorer.zip)| Event log (evtx) parser with standardized CSV, XML, and json output! Custom maps, locked file support, and more!
 | Hasher | [1.9.3.0](https://f001.backblazeb2.com/file/EricZimmermanTools/hasher.zip)| Hash all the things
@@ -43,7 +43,7 @@ Need everything at once? Here are ALL the tools as a single [ZIP](https://f001.b
 | ShellBags Explorer | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/ShellBagsExplorer.zip)| GUI for browsing shellbags data. Handles locked files
 | SQLECmd | [0.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SQLECmd.zip)| Find and process SQLite files according to your needs with maps!
 | SumECmd | [0.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SumECmd.zip)| Process Microsoft User Access Logs found under 'C:\Windows\System32\LogFiles\SUM'
-| SrumECmd | [0.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SrumECmd.zip) \| [0.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/SrumECmd.zip) | Process SRUDB.dat and (optionally) SOFTWARE hive for network, process, and energy info!
+| SrumECmd | [0.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SrumECmd.zip) &vert; [0.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/SrumECmd.zip) | Process SRUDB.dat and (optionally) SOFTWARE hive for network, process, and energy info!
 | Timeline Explorer | [1.3.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/TimelineExplorer.zip) | View CSV and Excel files, filter, group, sort, etc. with ease
 | VSCMount |[1.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/VSCMount.zip) | Mount all VSCs on a drive letter to a given mount point
 | WxTCmd | [0.6.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/WxTCmd.zip) | Windows 10 Timeline database parser
