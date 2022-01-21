@@ -37,7 +37,7 @@ Need everything at once? Here are ALL the tools as a single [ZIP](https://f001.b
 | JLECmd | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/JLECmd.zip) &vert; na| Jump List parser
 | JumpList Explorer | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/JumpListExplorer.zip) &vert; na | GUI based Jump List viewer 
 | LECmd  | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/LECmd.zip) &vert; na| Parse lnk files
-| MFTECmd |[0.5.0.1](https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip) &vert; na| $MFT, $Boot, $J, $SDS, and $LogFile (coming soon) parser. Handles locked files
+| MFTECmd |[0.5.2.0](https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip) &vert; [0.5.2.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/MFTECmd.zip)| $MFT, $Boot, $J, $SDS, and $LogFile (coming soon) parser. Handles locked files
 | MFTExplorer | [0.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/MFTExplorer.zip) &vert; na | Graphical $MFT viewer
 | PECmd  | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/PECmd.zip) &vert; na| Prefetch parser
 | RBCmd  | [0.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/RBCmd.zip) &vert; na| Recycle Bin artifact (INFO2/$I) parser
