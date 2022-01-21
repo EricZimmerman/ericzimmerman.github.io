@@ -39,7 +39,7 @@ Need everything at once? Here are ALL the tools as a single [ZIP](https://f001.b
 | LECmd  | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/LECmd.zip) &vert; na| Parse lnk files
 | MFTECmd |[0.5.2.0](https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip) &vert; [0.5.2.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/MFTECmd.zip)| $MFT, $Boot, $J, $SDS, and $LogFile (coming soon) parser. Handles locked files
 | MFTExplorer | [0.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/MFTExplorer.zip) &vert; na | Graphical $MFT viewer
-| PECmd  | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/PECmd.zip) &vert; na| Prefetch parser
+| PECmd  | [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/PECmd.zip) &vert; [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/PECmd.zip)| Prefetch parser
 | RBCmd  | [0.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/RBCmd.zip) &vert; na| Recycle Bin artifact (INFO2/$I) parser
 | RecentFileCacheParser | [1.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/RecentFileCacheParser.zip) &vert; na| RecentFileCache parser
 | Registry Explorer/RECmd |  [1.6.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip) &vert; na | Registry viewer with searching, multi-hive support, plugins, and more. Handles locked files
