@@ -29,7 +29,7 @@ Need everything at once? Here are ALL the tools as a single [ZIP](https://f001.b
 |Name | <span style="display: inline-block; width:150px">Version (.net 4 &vert; 6)</span> | Purpose | 
 |--|--|--
 | AmcacheParser | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/AmcacheParser.zip) &vert; na | Amcache.hve parser with lots of extra features. Handles locked files
-| AppCompatCacheParser | [1.4.4.0](https://f001.backblazeb2.com/file/EricZimmermanTools/AppCompatCacheParser.zip) &vert; na | AppCompatCache aka ShimCache parser. Handles locked files
+| AppCompatCacheParser | [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/AppCompatCacheParser.zip) &vert; [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/AppCompatCacheParser.zip) | AppCompatCache aka ShimCache parser. Handles locked files
 | bstrings | [1.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/bstrings.zip) &vert; na | Find them strings yo. Built in regex patterns. Handles locked files
 | EZViewer | [1.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/EZViewer.zip) &vert; na | Standalone, zero dependency viewer for .doc, .docx, .xls, .xlsx, .txt, .log, .rtf, .otd, .htm, .html, .mht, .csv, and .pdf. Any non-supported files are shown in a hex editor (with data interpreter!)
 | Evtx Explorer/EvtxECmd | [0.6.5.0](https://f001.backblazeb2.com/file/EricZimmermanTools/EvtxExplorer.zip) &vert; na | Event log (evtx) parser with standardized CSV, XML, and json output! Custom maps, locked file support, and more!
