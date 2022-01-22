@@ -32,7 +32,7 @@ Need everything at once? Here are ALL the tools as a single [ZIP](https://f001.b
 | AppCompatCacheParser | [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/AppCompatCacheParser.zip) &vert; [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/AppCompatCacheParser.zip) | AppCompatCache aka ShimCache parser. Handles locked files
 | bstrings | [1.5.2.0](https://f001.backblazeb2.com/file/EricZimmermanTools/bstrings.zip) &vert; [1.5.2.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/bstrings.zip) | Find them strings yo. Built in regex patterns. Handles locked files
 | EZViewer | [1.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/EZViewer.zip) &vert; na | Standalone, zero dependency viewer for .doc, .docx, .xls, .xlsx, .txt, .log, .rtf, .otd, .htm, .html, .mht, .csv, and .pdf. Any non-supported files are shown in a hex editor (with data interpreter!)
-| Evtx Explorer/EvtxECmd | [0.6.5.0](https://f001.backblazeb2.com/file/EricZimmermanTools/EvtxExplorer.zip) &vert; na | Event log (evtx) parser with standardized CSV, XML, and json output! Custom maps, locked file support, and more!
+| EvtxECmd | [0.6.5.0](https://f001.backblazeb2.com/file/EricZimmermanTools/EvtxECmd.zip) &vert; na | Event log (evtx) parser with standardized CSV, XML, and json output! Custom maps, locked file support, and more!
 | Hasher | [1.9.3.0](https://f001.backblazeb2.com/file/EricZimmermanTools/hasher.zip) &vert; na| Hash all the things
 | JLECmd | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/JLECmd.zip) &vert; na| Jump List parser
 | JumpList Explorer | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/JumpListExplorer.zip) &vert; na | GUI based Jump List viewer 
