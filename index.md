@@ -33,24 +33,24 @@ Need everything at once? Here are ALL the tools as a single [ZIP](https://f001.b
 | bstrings | [1.5.2.0](https://f001.backblazeb2.com/file/EricZimmermanTools/bstrings.zip) &vert; [1.5.2.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/bstrings.zip) | Find them strings yo. Built in regex patterns. Handles locked files
 | EZViewer | [1.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/EZViewer.zip) &vert; na | Standalone, zero dependency viewer for .doc, .docx, .xls, .xlsx, .txt, .log, .rtf, .otd, .htm, .html, .mht, .csv, and .pdf. Any non-supported files are shown in a hex editor (with data interpreter!)
 | EvtxECmd | [0.6.5.0](https://f001.backblazeb2.com/file/EricZimmermanTools/EvtxECmd.zip) &vert; na | Event log (evtx) parser with standardized CSV, XML, and json output! Custom maps, locked file support, and more!
-| Hasher | [1.9.3.0](https://f001.backblazeb2.com/file/EricZimmermanTools/hasher.zip) &vert; na| Hash all the things
-| JLECmd | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/JLECmd.zip) &vert; na| Jump List parser
+| Hasher | [1.9.3.0](https://f001.backblazeb2.com/file/EricZimmermanTools/hasher.zip) &vert; na | Hash all the things
+| JLECmd | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/JLECmd.zip) &vert; na | Jump List parser
 | JumpList Explorer | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/JumpListExplorer.zip) &vert; na | GUI based Jump List viewer 
 | LECmd  | [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/LECmd.zip) &vert; [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/LECmd.zip) | Parse lnk files
-| MFTECmd |[0.5.2.0](https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip) &vert; [0.5.2.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/MFTECmd.zip)| $MFT, $Boot, $J, $SDS, and $LogFile (coming soon) parser. Handles locked files
+| MFTECmd |[0.5.2.0](https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip) &vert; [0.5.2.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/MFTECmd.zip) | $MFT, $Boot, $J, $SDS, and $LogFile (coming soon) parser. Handles locked files
 | MFTExplorer | [0.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/MFTExplorer.zip) &vert; na | Graphical $MFT viewer
-| PECmd  | [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/PECmd.zip) &vert; [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/PECmd.zip)| Prefetch parser
-| RBCmd  | [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/RBCmd.zip) &vert; [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/RBCmd.zip)| Recycle Bin artifact (INFO2/$I) parser
-| RecentFileCacheParser | [1.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/RecentFileCacheParser.zip) &vert; na| RecentFileCache parser
+| PECmd  | [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/PECmd.zip) &vert; [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/PECmd.zip) | Prefetch parser
+| RBCmd  | [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/RBCmd.zip) &vert; [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/RBCmd.zip) | Recycle Bin artifact (INFO2/$I) parser
+| RecentFileCacheParser | [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/RecentFileCacheParser.zip) &vert; [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/RecentFileCacheParser.zip) | RecentFileCache parser
 | Registry Explorer/RECmd |  [1.6.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip) &vert; na | Registry viewer with searching, multi-hive support, plugins, and more. Handles locked files
 | SDB Explorer |  [1.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SDBExplorer.zip) &vert; na | Shim database GUI
-| ShellBags Explorer | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/ShellBagsExplorer.zip) &vert; na| GUI for browsing shellbags data. Handles locked files
-| SQLECmd | [0.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SQLECmd.zip) &vert; na| Find and process SQLite files according to your needs with maps!
+| ShellBags Explorer | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/ShellBagsExplorer.zip) &vert; na | GUI for browsing shellbags data. Handles locked files
+| SQLECmd | [0.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SQLECmd.zip) &vert; na | Find and process SQLite files according to your needs with maps!
 | SumECmd | [0.5.2.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SumECmd.zip) &vert; [0.5.2.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/SumECmd.zip) | Process Microsoft User Access Logs found under 'C:\Windows\System32\LogFiles\SUM'
 | SrumECmd | [0.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SrumECmd.zip) &vert; [0.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/SrumECmd.zip) | Process SRUDB.dat and (optionally) SOFTWARE hive for network, process, and energy info!
-| Timeline Explorer | [1.3.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/TimelineExplorer.zip) &vert; na| View CSV and Excel files, filter, group, sort, etc. with ease
+| Timeline Explorer | [1.3.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/TimelineExplorer.zip) &vert; na | View CSV and Excel files, filter, group, sort, etc. with ease
 | VSCMount |[1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/VSCMount.zip) &vert; [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/VSCMount.zip) | Mount all VSCs on a drive letter to a given mount point
-| WxTCmd | [0.6.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/WxTCmd.zip) &vert; na| Windows 10 Timeline database parser
+| WxTCmd | [0.6.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/WxTCmd.zip) &vert; na | Windows 10 Timeline database parser
 
 ***
 
@@ -60,7 +60,7 @@ Need everything at once? Here are ALL the tools as a single [ZIP](https://f001.b
 |--|--|--
 | KAPE | [NA](https://learn.duffandphelps.com/kape?utm_campaign=2019_cyberitbn-KAPE-launch&utm_source=kroll&utm_medium=referral&utm_term=kape-gui-blogpost) | Kroll Artifact Parser/Extractor: Flexible, high speed collection of files as well as processing of files. Many many features
 | iisGeoLocate | [2.0.0.2](https://f001.backblazeb2.com/file/EricZimmermanTools/iisGeolocate.zip) &vert; na | Geolocate IP addresses found in IIS logs, extracts unique IPs, records bad data from logs
-| TimeApp | [NA](https://f001.backblazeb2.com/file/EricZimmermanTools/TimeApp.zip) &vert; na| A simple app that shows current time (local and UTC) and optionally, public IP address. Great for testing
+| TimeApp | [NA](https://f001.backblazeb2.com/file/EricZimmermanTools/TimeApp.zip) &vert; na | A simple app that shows current time (local and UTC) and optionally, public IP address. Great for testing
 | XWFIM | [NA](https://f001.backblazeb2.com/file/EricZimmermanTools/XWFIM.zip)  &vert; na | X-Ways Forensics installation manager
 | Get-ZimmermanTools | [NA](https://f001.backblazeb2.com/file/EricZimmermanTools/Get-ZimmermanTools.zip) | PowerShell script to auto discover and update everything above.
 
