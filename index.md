@@ -50,7 +50,7 @@ Need everything at once? Here are ALL the tools as a single [ZIP](https://f001.b
 | SrumECmd | [0.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SrumECmd.zip) &vert; [0.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/SrumECmd.zip) | Process SRUDB.dat and (optionally) SOFTWARE hive for network, process, and energy info!
 | Timeline Explorer | [1.3.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/TimelineExplorer.zip) &vert; na | View CSV and Excel files, filter, group, sort, etc. with ease
 | VSCMount |[1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/VSCMount.zip) &vert; [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/VSCMount.zip) | Mount all VSCs on a drive letter to a given mount point
-| WxTCmd | [0.6.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/WxTCmd.zip) &vert; na | Windows 10 Timeline database parser
+| WxTCmd | [1.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/WxTCmd.zip) &vert; [1.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/WxTCmd.zip) | Windows 10 Timeline database parser
 
 ***
 
