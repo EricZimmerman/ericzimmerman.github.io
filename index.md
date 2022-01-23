@@ -26,7 +26,7 @@
 
 Need everything at once? Here are ALL the tools as a single zip file: [.NET 4](https://f001.backblazeb2.com/file/EricZimmermanTools/All.zip) &vert; [.NET 6](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/All_6.zip)
 
-|Name | <span style="display: inline-block; width:150px">Version (.net 4 &vert; 6)</span> | Purpose | 
+|Name | <span style="display: inline-block; width:150px">Version (.NET 4 &vert; 6)</span> | Purpose | 
 |--|--|--
 | AmcacheParser | [1.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/AmcacheParser.zip) &vert; [1.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/AmcacheParser.zip) | Amcache.hve parser with lots of extra features. Handles locked files
 | AppCompatCacheParser | [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/AppCompatCacheParser.zip) &vert; [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/AppCompatCacheParser.zip) | AppCompatCache aka ShimCache parser. Handles locked files
@@ -56,7 +56,7 @@ Need everything at once? Here are ALL the tools as a single zip file: [.NET 4](h
 
 ## Other tools
 
-|Name  |<span style="display: inline-block; width:150px">Version (.net 4 &vert; 6)</span> | Purpose
+|Name  |<span style="display: inline-block; width:150px">Version (.NET 4 &vert; 6)</span> | Purpose
 |--|--|--
 | Get-ZimmermanTools | [NA](https://f001.backblazeb2.com/file/EricZimmermanTools/Get-ZimmermanTools.zip) | PowerShell script to auto discover and update everything above.
 | iisGeoLocate | [2.2.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/iisGeolocate.zip) &vert; [2.2.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/iisGeolocate.zip) | Geolocate IP addresses found in IIS logs, extracts unique IPs, records bad data from logs
@@ -82,10 +82,10 @@ Need everything at once? Here are ALL the tools as a single zip file: [.NET 4](h
 ***
 ## Requirements and troubleshooting
 
- - .net 4 software requires at least [Microsoft .net 4.6.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462) or newer! You will get errors running these without at least 4.6.2. When in doubt, install it!
- - .net 6 software requires at least [Microsoft .net 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) or newer! You will get errors running these without at least 6. When in doubt, install it!
+ - .NET 4 software requires at least [Microsoft .NET 4.6.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462) or newer! You will get errors running these without at least 4.6.2. When in doubt, install it!
+ - .NET 6 software requires at least [Microsoft .NET 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) or newer! You will get errors running these without at least .NET 6. When in doubt, install it!
  - **DO NOT RUN ANYTHING FOUND HERE FROM 'C:\PROGRAM FILES' DIRECTORY** (unless you run them as administrator)!
- - **DO NOT USE WINDOWS TO EXTRACT THINGS.** Use 7-Zip or Winrar as Windows will block the DLLs!
+ - **DO NOT USE WINDOWS TO EXTRACT THINGS.** Use 7-Zip or WinRAR as Windows will block the DLLs!
  - All software is digitally signed. Once you verify the signature as coming from me, any anti-virus hits are false positives. When in doubt, download the files directly from here!
  - **If you get DPI scaling issues, make a shortcut (or directly against the exe), edit the properties, then click Compatibility. Under Change high DPI settings, check Override high DPI scaling behavior at bottom and choose System, then click OK out of the dialog**
 
