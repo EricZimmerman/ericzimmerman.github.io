@@ -24,7 +24,7 @@
 
 ## Forensic tools
 
-Need everything at once? Here are ALL the tools as a single [ZIP](https://f001.backblazeb2.com/file/EricZimmermanTools/All.zip)
+Need everything at once? Here are ALL the tools as a single zip file: [net 4](https://f001.backblazeb2.com/file/EricZimmermanTools/All.zip) &vert; [net 6](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/All_6.zip)
 
 |Name | <span style="display: inline-block; width:150px">Version (.net 4 &vert; 6)</span> | Purpose | 
 |--|--|--
