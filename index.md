@@ -45,7 +45,7 @@ Need everything at once? Here are ALL the tools as a single [ZIP](https://f001.b
 | Registry Explorer/RECmd |  [1.6.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip) &vert; na | Registry viewer with searching, multi-hive support, plugins, and more. Handles locked files
 | SDB Explorer |  [1.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SDBExplorer.zip) &vert; na | Shim database GUI
 | ShellBags Explorer | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/ShellBagsExplorer.zip) &vert; na | GUI for browsing shellbags data. Handles locked files
-| SQLECmd | [1.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SQLECmd.zip) &vert; na | Find and process SQLite files according to your needs with maps!
+| SQLECmd | [1.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SQLECmd.zip) &vert; [1.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SQLECmd.zip) | Find and process SQLite files according to your needs with maps!
 | SumECmd | [0.5.2.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SumECmd.zip) &vert; [0.5.2.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/SumECmd.zip) | Process Microsoft User Access Logs found under 'C:\Windows\System32\LogFiles\SUM'
 | SrumECmd | [0.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/SrumECmd.zip) &vert; [0.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/SrumECmd.zip) | Process SRUDB.dat and (optionally) SOFTWARE hive for network, process, and energy info!
 | Timeline Explorer | [1.3.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/TimelineExplorer.zip) &vert; na | View CSV and Excel files, filter, group, sort, etc. with ease
