@@ -35,7 +35,7 @@ Need everything at once? Here are ALL the tools as a single zip file: [.NET 4](h
 | EZViewer | [1.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/EZViewer.zip) &vert; na | Standalone, zero dependency viewer for .doc, .docx, .xls, .xlsx, .txt, .log, .rtf, .otd, .htm, .html, .mht, .csv, and .pdf. Any non-supported files are shown in a hex editor (with data interpreter!)
 | Hasher | [2.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/hasher.zip) &vert; na | Hash all the things
 | JLECmd | [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/JLECmd.zip) &vert; [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/JLECmd.zip) | Jump List parser
-| JumpList Explorer | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/JumpListExplorer.zip) &vert; na | GUI based Jump List viewer 
+| JumpList Explorer | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/JumpListExplorer.zip) &vert; [2.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/JumpListExplorer.zip) | GUI based Jump List viewer 
 | LECmd  | [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/LECmd.zip) &vert; [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/LECmd.zip) | Parse lnk files
 | MFTECmd |[0.5.2.0](https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip) &vert; [0.5.2.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/MFTECmd.zip) | $MFT, $Boot, $J, $SDS, and $LogFile (coming soon) parser. Handles locked files
 | MFTExplorer | [0.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/MFTExplorer.zip) &vert; [2.0.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/MFTExplorer.zip) | Graphical $MFT viewer
