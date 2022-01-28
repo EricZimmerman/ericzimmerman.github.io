@@ -6,11 +6,11 @@
 ## TL;DR
 
 1. **READ** the [Requirements and troubleshooting](https://ericzimmerman.github.io/#!index.md#Requirements_and_troubleshooting) section!!
-2. Use [Get-ZimmermanTools](https://f001.backblazeb2.com/file/EricZimmermanTools/Get-ZimmermanTools.zip) to download all programs at once and keep your toolset current
+2. Use [Get-ZimmermanTools](https://f001.backblazeb2.com/file/EricZimmermanTools/Get-ZimmermanTools.zip) to download all programs at once and keep your tool set current
     - Use **-Dest** to control where the tools ends up, else things end up in same directory as the script (recommended!)
-    - Use **-NetVersion** to control which flavor of tool you get: 4 for .NET 4.6.2 and 6 for .NET 6 (recommended!)
-3. All **GUI tools** will be updated to use .NET 6 only but the legacy version will be kept in place as well (just not updated anymore)
-4. All **CLI tools** will continue to be built for both .NET 4.6.2 and .NET 6
+    - Use **-NetVersion** to control which flavor of tool you get: 4 for .net 4.6.2 and 6 for .net 6 (recommended!)
+3. All **GUI tools** will be updated to use .net 6 only but the legacy version will be kept in place as well (just not updated anymore)
+4. All **CLI tools** will continue to be built for both .net 4.6.2 and .net 6
 
 ## Contribute/support opportunities
 
@@ -24,9 +24,9 @@
 
 ## Forensic tools
 
-Need everything at once? Here are ALL the tools as a single zip file: [.NET 4](https://f001.backblazeb2.com/file/EricZimmermanTools/All.zip) &vert; [.NET 6](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/All_6.zip)
+Need everything at once? Here are ALL the tools as a single zip file: [.net 4](https://f001.backblazeb2.com/file/EricZimmermanTools/All.zip) &vert; [.net 6](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/All_6.zip)
 
-|Name | <span style="display: inline-block; width:150px">Version (.NET 4 &vert; 6)</span> | Purpose | 
+|Name | <span style="display: inline-block; width:150px">Version (.net 4 &vert; 6)</span> | Purpose | 
 |--|--|--
 | AmcacheParser | [1.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/AmcacheParser.zip) &vert; [1.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/AmcacheParser.zip) | Amcache.hve parser with lots of extra features. Handles locked files
 | AppCompatCacheParser | [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/AppCompatCacheParser.zip) &vert; [1.5.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/AppCompatCacheParser.zip) | AppCompatCache aka ShimCache parser. Handles locked files
@@ -59,7 +59,7 @@ Need everything at once? Here are ALL the tools as a single zip file: [.NET 4](h
 
 ## Other tools
 
-|Name  |<span style="display: inline-block; width:150px">Version (.NET 4 &vert; 6)</span> | Purpose
+|Name  |<span style="display: inline-block; width:150px">Version (.net 4 &vert; 6)</span> | Purpose
 |--|--|--
 | Get-ZimmermanTools | [NA](https://f001.backblazeb2.com/file/EricZimmermanTools/Get-ZimmermanTools.zip) | PowerShell script to auto discover and update everything above.
 | iisGeoLocate | [2.2.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/iisGeolocate.zip) &vert; [2.2.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/net6/iisGeolocate.zip) | Geolocate IP addresses found in IIS logs, extracts unique IPs, records bad data from logs
@@ -85,8 +85,8 @@ Need everything at once? Here are ALL the tools as a single zip file: [.NET 4](h
 ***
 ## Requirements and troubleshooting
 
- - .NET 4 software requires at least [Microsoft .NET 4.6.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462) or newer! You will get errors running these without at least 4.6.2. When in doubt, install it!
- - .NET 6 software requires at least [Microsoft .NET 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) or newer! You will get errors running these without at least .NET 6. When in doubt, install it!
+ - .net 4 software requires at least [Microsoft .net 4.6.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462) or newer! You will get errors running these without at least 4.6.2. When in doubt, install it!
+ - .net 6 software requires at least [Microsoft .net 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) or newer! You will get errors running these without at least .net 6. When in doubt, install it!
  - **DO NOT RUN ANYTHING FOUND HERE FROM 'C:\PROGRAM FILES' DIRECTORY** (unless you run them as administrator)!
  - **DO NOT USE WINDOWS TO EXTRACT THINGS.** Use 7-Zip or WinRAR as Windows will block the DLLs!
  - All software is digitally signed. Once you verify the signature as coming from me, any anti-virus hits are false positives. When in doubt, download the files directly from here!
