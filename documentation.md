@@ -6,6 +6,6 @@ Some more general background stuff.
 
 
 
-- [MFTECmd](#!documentation/MFTECmd)
-- [LECmd](https://ericzimmerman.github.io/documentation/LECmd)
+- [MFTECmd](/documentation/MFTECmd)
+- [LECmd](documentation/LECmd)
 - [JLECmd](https://ericzimmerman.github.io/documentation/JLECmd)
