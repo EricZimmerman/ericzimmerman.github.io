@@ -2,7 +2,9 @@
 
 Below is a table comparing the .net 4 and .net 6 results when running an identical command against the same evidence (mostly from Lone Wolf 2018 Scenario). None of these commands were ran at the same time for a respective tool, i.e., the command for AmcacheParser (.net 4) was ran and finished before the command for AmcacheParser (.net 6) was ran. Mind you, these benchmarks are provided as is with these specific commands. It's very likely if you run commands different from the ones below that your benchmarks may vary. 
 
-In summary, there's improvements across the board in parsing speed with .net 6 while yielding identical results to the .net 4 that have been around for years at this point. See for yourself below!
+In summary, there's improvements across the board in parsing speed with .net 6 while yielding identical results to the .net 4 that have been around for years at this point. Results were compared in file size, line counts, etc, using Timeline Explorer, Beyond Compare, and EditPad Pro. 
+
+See for yourself below!
 
 | Tool | .net 4 Time (Sec) | .net 6 Time (Sec) | % Improvement | Command Used |
 |:---:|:---:|:---:|:---:|:---:|
