@@ -5,5 +5,5 @@ Some more general background stuff.
 # Tools
 
 - [MFTECmd](https://ericzimmerman.github.io/documentation/MFTECmd)
-- [LECmd](https://ericzimmerman.github.io/documentation/LEECmd)
-- [JLEECmd](https://ericzimmerman.github.io/documentation/JLEECmd)
+- [LECmd](https://ericzimmerman.github.io/documentation/LECmd)
+- [JLECmd](https://ericzimmerman.github.io/documentation/JLECmd)
