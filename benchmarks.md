@@ -6,7 +6,7 @@ In summary, there's improvements across the board in parsing speed with .net 6 w
 
 See for yourself below!
 
-#$ Benchmark Results 
+## Benchmark Results 
 
 | Tool | .net 4 Time (Sec) | .net 6 Time (Sec) | % Improvement | 
 |--|--|--|--|
