@@ -8,20 +8,20 @@ See for yourself below!
 
 | Tool | .net 4 Time (Sec) | .net 6 Time (Sec) | % Improvement | Command Used |
 |--|--|--|--|--|
-| AmcacheParser | 1.16 | 0.893 | 29.90% | `.\AmcacheParser.exe -f   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\Windows\AppCompat\Programs\Amcache.hve"   --csv "D:\KAPETrainingVM\LoneWolf2018KAPE\tout" --debug --mp -i` |
-| AppCompatCacheParser | 0.963 | 0.784 | 22.83% | `.\AppCompatCacheParser.exe -f   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\Windows\System32\config\SYSTEM"   --csv c:\temp\ --debug` |
-| bstrings | 21.926 | 9.797 | 123.80% | `.\bstrings.exe -d   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E" -a --ls cloudy` |
-| EvtxECmd | 22.1782 | 17.4617 | 27.01% | `.\EvtxECmd.exe -d   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\Windows\System32\winevt\logs"   --csv "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E" --debug` |
-| JLECmd | 0.3109 | 0.2481 | 25.31% | `.\JLECmd.exe -d   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\Users\jcloudy\AppData\Roaming\Microsoft\Windows\Recent\"   --mp --csv "D:\KAPETrainingVM\LoneWolf2018KAPE\tout"` |
-| LECmd | 0.5362 | 0.3928 | 36.51% | `.\LECmd.exe -d   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\Users\jcloudy\AppData\Roaming\Microsoft\Windows\Recent\"   --mp --csv "D:\KAPETrainingVM\LoneWolf2018KAPE\tout"` |
-| MFTECmd | 3.2324 | 1.8764 | 72.27% | `.\MFTECmd.exe -f   'D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\$MFT' --csv   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout"` |
-| PECmd | 9.6571 | 6.8533 | 40.91% | `.\PECmd.exe -d   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\Windows\prefetch\" --csv   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E" --mp` |
-| RBCmd | 0.0484 | 0.0218 | 122.02% | `.\RBCmd.exe -d   'D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\$Recycle.Bin\S-1-5-21-2734969515-1644526556-1039763013-1001'   --csv 'D:\KAPETrainingVM\LoneWolf2018KAPE\tout' --debug` |
-| RecentFileCacheParser | 0.1878091 | 0.1785781 | 5.17% | `.\RecentFileCacheParser.exe -f   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\RecentFileCache.bcf"   --csv "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\"` |
-| RECmd | 440.004 | 30.815 | 1327.89% | `.\RECmd.exe -d   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E" --sa cloudy --debug` |
-| SBECmd | 1.14 | 0.83 | 37.35% | `.\SBECmd.exe -d   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E" --csv   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E" --debug` |
-| SQLECmd | 4.5646 | 4.3613 | 4.66% | `.\SQLECmd.exe -d   D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E --hunt --csv   D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E --debug` |
-| SrumECmd | 1.677 | 1.4052 | 19.34% | `.\SrumECmd.exe -d   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E" --csv   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout" --debug` |
-| SumECmd | 78.5192 | 63.8961 | 22.89% | `.\SumECmd.exe -d   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\SUM" --csv   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\SUM" --debug` |
+| AmcacheParser | 1.16 | 0.893 | 29.90% | `.\AmcacheParser.exe -f   ".\LoneWolf2018\\Amcache.hve"   --csv ".\output" --debug --mp -i` |
+| AppCompatCacheParser | 0.963 | 0.784 | 22.83% | `.\AppCompatCacheParser.exe -f   ".\LoneWolf2018\SYSTEM"   --csv c:\temp\ --debug` |
+| bstrings | 21.926 | 9.797 | 123.80% | `.\bstrings.exe -d   ".\LoneWolf2018\" -a --ls cloudy` |
+| EvtxECmd | 22.1782 | 17.4617 | 27.01% | `.\EvtxECmd.exe -d   ".\LoneWolf2018\logs"   --csv ".\LoneWolf2018\" --debug` |
+| JLECmd | 0.3109 | 0.2481 | 25.31% | `.\JLECmd.exe -d   ".\LoneWolf2018\\Recent\"   --mp --csv ".\output"` |
+| LECmd | 0.5362 | 0.3928 | 36.51% | `.\LECmd.exe -d   ".\LoneWolf2018\\Recent\"   --mp --csv ".\output"` |
+| MFTECmd | 3.2324 | 1.8764 | 72.27% | `.\MFTECmd.exe -f   '.\LoneWolf2018\$MFT' --csv   ".\output"` |
+| PECmd | 9.6571 | 6.8533 | 40.91% | `.\PECmd.exe -d   ".\LoneWolf2018\prefetch\" --csv   ".\LoneWolf2018\" --mp` |
+| RBCmd | 0.0484 | 0.0218 | 122.02% | `.\RBCmd.exe -d   '.\LoneWolf2018\$Recycle.Bin\S-1-5-21-2734969515-1644526556-1039763013-1001'   --csv '.\output' --debug` |
+| RecentFileCacheParser | 0.1878091 | 0.1785781 | 5.17% | `.\RecentFileCacheParser.exe -f   ".\LoneWolf2018\RecentFileCache.bcf"   --csv ".\output\"` |
+| RECmd | 440.004 | 30.815 | 1327.89% | `.\RECmd.exe -d   ".\LoneWolf2018\" --sa cloudy --debug` |
+| SBECmd | 1.14 | 0.83 | 37.35% | `.\SBECmd.exe -d   ".\LoneWolf2018\" --csv   ".\LoneWolf2018\" --debug` |
+| SQLECmd | 4.5646 | 4.3613 | 4.66% | `.\SQLECmd.exe -d   .\LoneWolf2018\ --hunt --csv   .\LoneWolf2018\ --debug` |
+| SrumECmd | 1.677 | 1.4052 | 19.34% | `.\SrumECmd.exe -d   ".\LoneWolf2018\" --csv   ".\output" --debug` |
+| SumECmd | 78.5192 | 63.8961 | 22.89% | `.\SumECmd.exe -d   ".\LoneWolf2018\SUM" --csv   ".\LoneWolf2018\SUM" --debug` |
 | Timeline Explorer | 21 | 15 | 40.00% | 1gb CSV generated from   EventTranscript.DB SQLECmd Query |
-| WxTCmd | 0.1673 | 0.1365 | 22.56% | `.\WxTCmd.exe -f   'D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\Users\jcloudy\AppData\Local\ConnectedDevicesPlatform\b5e4e06f22924dca\ActivitiesCache.db'   --csv 'D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E'` |
+| WxTCmd | 0.1673 | 0.1365 | 22.56% | `.\WxTCmd.exe -f   '.\LoneWolf2018\\ActivitiesCache.db'   --csv '.\LoneWolf2018\'` |
