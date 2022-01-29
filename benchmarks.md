@@ -28,6 +28,29 @@ See for yourself below!
 
 FYI: Paths have been shorted for readability purposes within the above Markdown table
 
+# Concept 
+
+| Tool | .net 4 Time (Sec) | .net 6 Time (Sec) | % Improvement | 
+|--|--|--|--|
+| AmcacheParser | 1.16 | 0.893 | 29.90% |
+| AppCompatCacheParser | 0.963 | 0.784 | 22.83% |
+| bstrings | 21.926 | 9.797 | 123.80% | 
+| EvtxECmd | 22.1782 | 17.4617 | 27.01% |
+| JLECmd | 0.3109 | 0.2481 | 25.31% |
+| LECmd | 0.5362 | 0.3928 | 36.51% | 
+| MFTECmd | 3.2324 | 1.8764 | 72.27% |
+| PECmd | 9.6571 | 6.8533 | 40.91% | 
+| RBCmd | 0.0484 | 0.0218 | 122.02% |
+| RecentFileCacheParser | 0.1878091 | 0.1785781 | 5.17% |
+| RECmd | 440.004 | 30.815 | 1327.89% | 
+| SBECmd | 1.14 | 0.83 | 37.35% | 
+| SQLECmd | 4.5646 | 4.3613 | 4.66% | 
+| SrumECmd | 1.677 | 1.4052 | 19.34% |
+| SumECmd | 78.5192 | 63.8961 | 22.89% |
+| Timeline Explorer | 21 | 15 | 40.00% |
+| WxTCmd | 0.1673 | 0.1365 | 22.56% |
+
+
 ## Commands Used
 
 | Tool | Command Used |
