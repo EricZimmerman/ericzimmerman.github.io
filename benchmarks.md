@@ -25,3 +25,5 @@ See for yourself below!
 | SumECmd | 78.5192 | 63.8961 | 22.89% | `.\SumECmd.exe -d   ".\LoneWolf2018\SUM" --csv   ".\LoneWolf2018\SUM" --debug` |
 | Timeline Explorer | 21 | 15 | 40.00% | 1gb CSV generated from   EventTranscript.DB SQLECmd Query |
 | WxTCmd | 0.1673 | 0.1365 | 22.56% | `.\WxTCmd.exe -f   '.\LoneWolf2018\\ActivitiesCache.db'   --csv '.\LoneWolf2018\'` |
+
+FYI: Paths have been shorted for readability purposes within the above Markdown table
