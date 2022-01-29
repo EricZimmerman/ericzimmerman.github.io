@@ -27,3 +27,25 @@ See for yourself below!
 | WxTCmd | 0.1673 | 0.1365 | 22.56% | `.\WxTCmd.exe -f   '.\LW2018\ActivitiesCache.db'   --csv '.\LW2018\'` |
 
 FYI: Paths have been shorted for readability purposes within the above Markdown table
+
+## Commands Used
+
+| Tool | Command Used |
+|:---:|:---:|
+| AmcacheParser | `.\AmcacheParser.exe -f   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\Windows\AppCompat\Programs\Amcache.hve"   --csv "D:\KAPETrainingVM\LoneWolf2018KAPE\tout" --debug --mp -i` |
+| AppCompatCacheParser | `.\AppCompatCacheParser.exe -f   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\Windows\System32\config\SYSTEM"   --csv c:\temp\ --debug` |
+| bstrings | `.\bstrings.exe -d   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E" -a --ls cloudy` |
+| EvtxECmd | `.\EvtxECmd.exe -d   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\Windows\System32\winevt\logs"   --csv "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E" --debug` |
+| JLECmd | `.\JLECmd.exe -d   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\Users\jcloudy\AppData\Roaming\Microsoft\Windows\Recent\"   --mp --csv "D:\KAPETrainingVM\LoneWolf2018KAPE\tout"` |
+| LECmd | `.\LECmd.exe -d   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\Users\jcloudy\AppData\Roaming\Microsoft\Windows\Recent\"   --mp --csv "D:\KAPETrainingVM\LoneWolf2018KAPE\tout"` |
+| MFTECmd | `.\MFTECmd.exe -f   'D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\$MFT' --csv   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout"` |
+| PECmd | `.\PECmd.exe -d   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\Windows\prefetch\" --csv   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E" --mp` |
+| RBCmd | `.\RBCmd.exe -d   'D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\$Recycle.Bin\S-1-5-21-2734969515-1644526556-1039763013-1001'   --csv 'D:\KAPETrainingVM\LoneWolf2018KAPE\tout' --debug` |
+| RecentFileCacheParser | `.\RecentFileCacheParser.exe -f   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\RecentFileCache.bcf"   --csv "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\"` |
+| RECmd | `.\RECmd.exe -d   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E" --sa cloudy --debug` |
+| SBECmd | `.\SBECmd.exe -d   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E" --csv   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E" --debug` |
+| SQLECmd | `.\SQLECmd.exe -d   D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E --hunt --csv   D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E --debug` |
+| SrumECmd | `.\SrumECmd.exe -d   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E" --csv   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout" --debug` |
+| SumECmd | `.\SumECmd.exe -d   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\SUM" --csv   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\SUM" --debug` |
+| Timeline Explorer | 1gb CSV generated from   EventTranscript.DB SQLECmd Query |
+| WxTCmd | `.\WxTCmd.exe -f   'D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\Users\jcloudy\AppData\Local\ConnectedDevicesPlatform\b5e4e06f22924dca\ActivitiesCache.db'   --csv 'D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E'` |
