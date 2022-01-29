@@ -6,29 +6,7 @@ In summary, there's improvements across the board in parsing speed with .net 6 w
 
 See for yourself below!
 
-| Tool | .net 4 Time (Sec) | .net 6 Time (Sec) | % Improvement | Command Used |
-|--|--|--|--|--|
-| AmcacheParser | 1.16 | 0.893 | 29.90% | `.\AmcacheParser.exe -f   ".\LW2018\Amcache.hve"   --csv ".\output" --debug --mp -i` |
-| AppCompatCacheParser | 0.963 | 0.784 | 22.83% | `.\AppCompatCacheParser.exe -f   ".\LW2018\SYSTEM"   --csv c:\temp\ --debug` |
-| bstrings | 21.926 | 9.797 | 123.80% | `.\bstrings.exe -d   ".\LW2018\" -a --ls cloudy` |
-| EvtxECmd | 22.1782 | 17.4617 | 27.01% | `.\EvtxECmd.exe -d   ".\LW2018\logs"   --csv ".\LW2018\" --debug` |
-| JLECmd | 0.3109 | 0.2481 | 25.31% | `.\JLECmd.exe -d   ".\LW2018\Recent\"   --mp --csv ".\output"` |
-| LECmd | 0.5362 | 0.3928 | 36.51% | `.\LECmd.exe -d   ".\LW2018\Recent\"   --mp --csv ".\output"` |
-| MFTECmd | 3.2324 | 1.8764 | 72.27% | `.\MFTECmd.exe -f   '.\LW2018\$MFT' --csv   ".\output"` |
-| PECmd | 9.6571 | 6.8533 | 40.91% | `.\PECmd.exe -d   ".\LW2018\prefetch\" --csv   ".\LW2018\" --mp` |
-| RBCmd | 0.0484 | 0.0218 | 122.02% | `.\RBCmd.exe -d   '.\LW2018\$Recycle.Bin\%UserSid%'   --csv '.\output' --debug` |
-| RecentFileCacheParser | 0.1878091 | 0.1785781 | 5.17% | `.\RecentFileCacheParser.exe -f   ".\LW2018\RecentFileCache.bcf"   --csv ".\output\"` |
-| RECmd | 440.004 | 30.815 | 1327.89% | `.\RECmd.exe -d   ".\LW2018\" --sa cloudy --debug` |
-| SBECmd | 1.14 | 0.83 | 37.35% | `.\SBECmd.exe -d   ".\LW2018\" --csv   ".\LW2018\" --debug` |
-| SQLECmd | 4.5646 | 4.3613 | 4.66% | `.\SQLECmd.exe -d   .\LW2018\ --hunt --csv   .\LW2018\ --debug` |
-| SrumECmd | 1.677 | 1.4052 | 19.34% | `.\SrumECmd.exe -d   ".\LW2018\" --csv   ".\output" --debug` |
-| SumECmd | 78.5192 | 63.8961 | 22.89% | `.\SumECmd.exe -d   ".\LW2018\SUM" --csv   ".\LW2018\SUM" --debug` |
-| Timeline Explorer | 21 | 15 | 40.00% | 1gb CSV generated from   EventTranscript.DB SQLECmd Query |
-| WxTCmd | 0.1673 | 0.1365 | 22.56% | `.\WxTCmd.exe -f   '.\LW2018\ActivitiesCache.db'   --csv '.\LW2018\'` |
-
-FYI: Paths have been shorted for readability purposes within the above Markdown table
-
-# Concept 
+#$ Benchmark Results 
 
 | Tool | .net 4 Time (Sec) | .net 6 Time (Sec) | % Improvement | 
 |--|--|--|--|
@@ -50,10 +28,9 @@ FYI: Paths have been shorted for readability purposes within the above Markdown 
 | Timeline Explorer | 21 | 15 | 40.00% |
 | WxTCmd | 0.1673 | 0.1365 | 22.56% |
 
-
 ## Commands Used
 
-| Tool | Command Used |
+| Tool | Command Used/Notes |
 |:---:|:---:|
 | AmcacheParser | `.\AmcacheParser.exe -f   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\Windows\AppCompat\Programs\Amcache.hve"   --csv "D:\KAPETrainingVM\LoneWolf2018KAPE\tout" --debug --mp -i` |
 | AppCompatCacheParser | `.\AppCompatCacheParser.exe -f   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\Windows\System32\config\SYSTEM"   --csv c:\temp\ --debug` |
