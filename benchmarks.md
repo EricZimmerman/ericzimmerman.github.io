@@ -7,7 +7,7 @@ In summary, there's improvements across the board in parsing speed with .net 6 w
 See for yourself below!
 
 | Tool | .net 4 Time (Sec) | .net 6 Time (Sec) | % Improvement | Command Used |
-|:-:|:-:|:-:|:-:|:-:|
+|--|--|--|--|--|
 | AmcacheParser | 1.16 | 0.893 | 29.90% | `.\AmcacheParser.exe -f   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\Windows\AppCompat\Programs\Amcache.hve"   --csv "D:\KAPETrainingVM\LoneWolf2018KAPE\tout" --debug --mp -i` |
 | AppCompatCacheParser | 0.963 | 0.784 | 22.83% | `.\AppCompatCacheParser.exe -f   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E\Windows\System32\config\SYSTEM"   --csv c:\temp\ --debug` |
 | bstrings | 21.926 | 9.797 | 123.80% | `.\bstrings.exe -d   "D:\KAPETrainingVM\LoneWolf2018KAPE\tout\E" -a --ls cloudy` |
