@@ -50,7 +50,6 @@
     
     Either -f or -d is required. Exiting
     
-   
 ## Change log
 
 Coming soon!
