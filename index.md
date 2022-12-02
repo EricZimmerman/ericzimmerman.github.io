@@ -2,7 +2,6 @@
   <img src="https://ericzimmerman.github.io/logoSmall.jpg">
 </p>
 
-
 ## TL;DR
 
 1. **READ** the [Requirements and troubleshooting](https://ericzimmerman.github.io/#!index.md#Requirements_and_troubleshooting) section!!
@@ -19,8 +18,6 @@
 [![Donate](https://ericzimmerman.github.io/Quarter16.png)](https://paypal.me/ericrzimmerman) **[PayPal](https://paypal.me/ericrzimmerman)**
 
 [![Donate](https://ericzimmerman.github.io/Quarter16.png)](https://www.patreon.com/ericzimmerman) **[Patreon](https://www.patreon.com/ericzimmerman)**
-
-
 
 ## Forensic tools
 
@@ -67,11 +64,7 @@ Need everything at once? Here are ALL the tools as a single zip file: [.net 4](h
 | TimeApp | [NA](https://f001.backblazeb2.com/file/EricZimmermanTools/TimeApp.zip) &vert; na | A simple app that shows current time (local and UTC) and optionally, public IP address. Great for testing
 | XWFIM | [NA](https://f001.backblazeb2.com/file/EricZimmermanTools/XWFIM.zip)  &vert; na | X-Ways Forensics installation manager
 
-
-
-
 ***
-
 
 ## Other files
 
@@ -79,10 +72,8 @@ Need everything at once? Here are ALL the tools as a single zip file: [.net 4](h
 |--|--|--
 | Change log | [NA](https://f001.backblazeb2.com/file/EricZimmermanTools/ChangeLog.txt)| 
 
-
-
-
 ***
+
 ## Requirements and troubleshooting
 
  - .net 4 software requires at least [Microsoft .net 4.6.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462) or newer! You will get errors running these without at least 4.6.2. When in doubt, install it!
@@ -93,6 +84,5 @@ Need everything at once? Here are ALL the tools as a single zip file: [.net 4](h
  - **If you get DPI scaling issues, make a shortcut (or directly against the exe), edit the properties, then click Compatibility. Under Change high DPI settings, check Override high DPI scaling behavior at bottom and choose System, then click OK out of the dialog**
 
 ***
-
 
 Open Source Development funding and support provided by the following contributors: [SANS Institute](http://sans.org/) and [SANS DFIR](http://dfir.sans.org/).
