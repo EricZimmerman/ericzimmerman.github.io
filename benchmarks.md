@@ -1,4 +1,6 @@
-# .net 4 vs .net 6 EZ Tool Benchmarks
+# Benchmarks
+
+## .net 4 vs .net 6 EZ Tool Benchmarks
 
 Below is a table comparing the .net 4 and .net 6 results when running an identical command against the same evidence (mostly from Lone Wolf 2018 Scenario). None of these commands were ran at the same time for a respective tool, i.e., the command for AmcacheParser (.net 4) was ran and finished before the command for AmcacheParser (.net 6) was ran. Mind you, these benchmarks are provided as is with these specific commands. It's very likely if you run commands different from the ones below that your benchmarks may vary. 
 
@@ -6,7 +8,7 @@ In summary, there's improvements across the board in parsing speed with .net 6 w
 
 See for yourself below!
 
-## Benchmark Results 
+### Benchmark Results 
 
 | Tool | .net 4 Time (Sec) | .net 6 Time (Sec) | % Improvement | 
 |--|--|--|--|
@@ -28,7 +30,7 @@ See for yourself below!
 | Timeline Explorer | 21 | 15 | 40.00% |
 | WxTCmd | 0.1673 | 0.1365 | 22.56% |
 
-## Commands Used
+### Commands Used
 
 | Tool | Command Used/Notes |
 |:---:|:---:|
