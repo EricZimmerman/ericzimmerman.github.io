@@ -56,7 +56,7 @@
 
 |Name  |<span style="display: inline-block; width:150px">Version (.net 4 &vert; 6)</span> | Purpose
 |--|--|--
-| Get-ZimmermanTools | [NA](https://download.mikestammer.com/Get-ZimmermanTools.zip) | PowerShell script to auto discover and update everything above.
+| Get-ZimmermanTools | [NA](https://f001.backblazeb2.com/file/EricZimmermanTools/Get-ZimmermanTools.zip) | PowerShell script to auto discover and update everything above.
 | iisGeoLocate | [2.2.0.0](https://download.mikestammer.com/iisGeolocate.zip) &vert; [2.2.0.0](https://download.mikestammer.com/net6/iisGeolocate.zip) | Geolocate IP addresses found in IIS logs, extracts unique IPs, records bad data from logs
 | KAPE | [NA](https://learn.duffandphelps.com/kape?utm_campaign=2019_cyberitbn-KAPE-launch&utm_source=kroll&utm_medium=referral&utm_term=kape-gui-blogpost) | Kroll Artifact Parser/Extractor: Flexible, high speed collection of files as well as processing of files. Many many features
 | TimeApp | [NA](https://download.mikestammer.com/TimeApp.zip) &vert; na | A simple app that shows current time (local and UTC) and optionally, public IP address. Great for testing
