@@ -32,13 +32,13 @@
 | JLECmd | [1.5.0.0](https://download.ericzimmermanstools.com/JLECmd.zip) &vert; [1.5.0.0](https://download.ericzimmermanstools.com/net6/JLECmd.zip) | Jump List parser
 | JumpList Explorer | - &vert; [2.0.0.0](https://download.ericzimmermanstools.com/net6/JumpListExplorer.zip) | GUI based Jump List viewer 
 | LECmd  | [1.5.0.0](https://download.ericzimmermanstools.com/LECmd.zip) &vert; [1.5.0.0](https://download.ericzimmermanstools.com/net6/LECmd.zip) | Parse lnk files
-| MFTECmd |[1.2.2.0](https://download.ericzimmermanstools.com/MFTECmd.zip) &vert; [1.2.2.0](https://download.ericzimmermanstools.com/net6/MFTECmd.zip) | $MFT, $Boot, $J, $SDS, $I30, and $LogFile (coming soon) parser. Handles locked files
+| MFTECmd |[1.2.2.1](https://download.ericzimmermanstools.com/MFTECmd.zip) &vert; [1.2.2.1](https://download.ericzimmermanstools.com/net6/MFTECmd.zip) | $MFT, $Boot, $J, $SDS, $I30, and $LogFile (coming soon) parser. Handles locked files
 | MFTExplorer | - &vert; [2.0.0.0](https://download.ericzimmermanstools.com/net6/MFTExplorer.zip) | Graphical $MFT viewer
 | PECmd  | [1.5.0.0](https://download.ericzimmermanstools.com/PECmd.zip) &vert; [1.5.0.0](https://download.ericzimmermanstools.com/net6/PECmd.zip) | Prefetch parser
 | RBCmd  | [1.5.0.0](https://download.ericzimmermanstools.com/RBCmd.zip) &vert; [1.5.0.0](https://download.ericzimmermanstools.com/net6/RBCmd.zip) | Recycle Bin artifact (INFO2/$I) parser
 | RecentFileCacheParser | [1.5.0.0](https://download.ericzimmermanstools.com/RecentFileCacheParser.zip) &vert; [1.5.0.0](https://download.ericzimmermanstools.com/net6/RecentFileCacheParser.zip) | RecentFileCache parser
-| RECmd | [1.6.0.0](https://download.ericzimmermanstools.com/RECmd.zip) &vert; [2.0.0.0](https://download.ericzimmermanstools.com/net6/RECmd.zip) | Powerful command line Registry tool searching, multi-hive support, plugins, and more
-| Registry Explorer | - &vert; [2.0.0.0](https://download.ericzimmermanstools.com/net6/RegistryExplorer.zip) | Registry viewer with searching, multi-hive support, plugins, and more. Handles locked files
+| RECmd | [2.0.0.0](https://download.ericzimmermanstools.com/RECmd.zip) &vert; [2.0.0.0](https://download.ericzimmermanstools.com/net6/RECmd.zip) | Powerful command line Registry tool searching, multi-hive support, plugins, and more
+| Registry Explorer | - &vert; [1.6.0.0](https://download.ericzimmermanstools.com/net6/RegistryExplorer.zip) | Registry viewer with searching, multi-hive support, plugins, and more. Handles locked files
 | RLA | [2.0.0.0](https://download.ericzimmermanstools.com/rla.zip) &vert; [2.0.0.0](https://download.ericzimmermanstools.com/net6/rla.zip) | Replay transaction logs and update Registry hives so they are no longer dirty. Useful when tools do not know how to handle transaction logs
 | SDB Explorer |  - &vert; [2.0.0.0](https://download.ericzimmermanstools.com/net6/SDBExplorer.zip) | Shim database GUI
 | SBECmd | [2.0.0.0](https://download.ericzimmermanstools.com/SBECmd.zip) &vert; [2.0.0.0](https://download.ericzimmermanstools.com/net6/SBECmd.zip) | ShellBags Explorer, command line edition, for exporting shellbag data
@@ -46,7 +46,7 @@
 | SQLECmd | [1.0.0.0](https://download.ericzimmermanstools.com/SQLECmd.zip) &vert; [1.0.0.0](https://download.ericzimmermanstools.com/net6/SQLECmd.zip) | Find and process SQLite files according to your needs with maps!
 | SrumECmd | [0.5.1.0](https://download.ericzimmermanstools.com/SrumECmd.zip) &vert; [0.5.1.0](https://download.ericzimmermanstools.com/net6/SrumECmd.zip) | Process SRUDB.dat and (optionally) SOFTWARE hive for network, process, and energy info!
 | SumECmd | [0.5.2.0](https://download.ericzimmermanstools.com/SumECmd.zip) &vert; [0.5.2.0](https://download.ericzimmermanstools.com/net6/SumECmd.zip) | Process Microsoft User Access Logs found under 'C:\Windows\System32\LogFiles\SUM'
-| Timeline Explorer | - &vert; [2.0.0.0](https://download.ericzimmermanstools.com/net6/TimelineExplorer.zip) | View CSV and Excel files, filter, group, sort, etc. with ease
+| Timeline Explorer | - &vert; [2.0.0.1](https://download.ericzimmermanstools.com/net6/TimelineExplorer.zip) | View CSV and Excel files, filter, group, sort, etc. with ease
 | VSCMount |[1.5.0.0](https://download.ericzimmermanstools.com/VSCMount.zip) &vert; [1.5.0.0](https://download.ericzimmermanstools.com/net6/VSCMount.zip) | Mount all VSCs on a drive letter to a given mount point
 | WxTCmd | [1.0.0.0](https://download.ericzimmermanstools.com/WxTCmd.zip) &vert; [1.0.0.0](https://download.ericzimmermanstools.com/net6/WxTCmd.zip) | Windows 10 Timeline database parser
 
