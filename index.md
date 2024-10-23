@@ -38,7 +38,7 @@
 | RBCmd  | [1.5.0.0](https://download.ericzimmermanstools.com/RBCmd.zip) &vert; [1.5.0.0](https://download.ericzimmermanstools.com/net6/RBCmd.zip) | Recycle Bin artifact (INFO2/$I) parser
 | RecentFileCacheParser | [1.5.0.0](https://download.ericzimmermanstools.com/RecentFileCacheParser.zip) &vert; [1.5.0.0](https://download.ericzimmermanstools.com/net6/RecentFileCacheParser.zip) | RecentFileCache parser
 | RECmd | [2.0.0.0](https://download.ericzimmermanstools.com/RECmd.zip) &vert; [2.0.0.0](https://download.ericzimmermanstools.com/net6/RECmd.zip) | Powerful command line Registry tool searching, multi-hive support, plugins, and more
-| Registry Explorer | - &vert; [1.6.0.0](https://download.ericzimmermanstools.com/net6/RegistryExplorer.zip) | Registry viewer with searching, multi-hive support, plugins, and more. Handles locked files
+| Registry Explorer | - &vert; [2.0.0.0](https://download.ericzimmermanstools.com/net6/RegistryExplorer.zip) | Registry viewer with searching, multi-hive support, plugins, and more. Handles locked files
 | RLA | [2.0.0.0](https://download.ericzimmermanstools.com/rla.zip) &vert; [2.0.0.0](https://download.ericzimmermanstools.com/net6/rla.zip) | Replay transaction logs and update Registry hives so they are no longer dirty. Useful when tools do not know how to handle transaction logs
 | SDB Explorer |  - &vert; [2.0.0.0](https://download.ericzimmermanstools.com/net6/SDBExplorer.zip) | Shim database GUI
 | SBECmd | [2.0.0.0](https://download.ericzimmermanstools.com/SBECmd.zip) &vert; [2.0.0.0](https://download.ericzimmermanstools.com/net6/SBECmd.zip) | ShellBags Explorer, command line edition, for exporting shellbag data
