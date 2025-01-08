@@ -1,5 +1,11 @@
 # Benchmarks
 
+## Background
+
+In 2022, EZ Tools were updated from .net 4 to .net 6 which provided performance benefits. However, .net 6 reached end of support in November 2024. 
+
+In 2025, EZ Tools are being updated from .net 6 to .net 9, which will be supported by Microsoft until May 2026, as seen [here](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core).
+
 ## .net 4 vs .net 6 EZ Tool Benchmarks
 
 Below is a table comparing the .net 4 and .net 6 results when running an identical command against the same evidence (mostly from Lone Wolf 2018 Scenario). None of these commands were ran at the same time for a respective tool, i.e., the command for AmcacheParser (.net 4) was ran and finished before the command for AmcacheParser (.net 6) was ran. Mind you, these benchmarks are provided as is with these specific commands. It's very likely if you run commands different from the ones below that your benchmarks may vary. 
