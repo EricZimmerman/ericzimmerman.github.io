@@ -6,4 +6,4 @@ The official EZ Tools Manuals can be found on Leanpub [here](https://leanpub.com
 
 ## KAPE
 
-The official KAPE documentation exists [here](https://ericzimmerman.github.io/KapeDocs/)! Any feedback for KAPE can be reported [here](https://github.com/EricZimmerman/KapeFiles).
+The official KAPE documentation exists [here](https://ericzimmerman.github.io/KapeDocs/)! Any feedback, suggestions, errors, etc for KAPE documentation can be reported [here](https://github.com/EricZimmerman/KapeDocs/issues). Any feedback for KAPE can be reported [here](https://github.com/EricZimmerman/KapeFiles/issues). 
