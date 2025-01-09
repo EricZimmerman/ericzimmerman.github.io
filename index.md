@@ -7,7 +7,7 @@
 1. **READ** the [Requirements and troubleshooting](https://ericzimmerman.github.io/#!index.md#requirements-and-troubleshooting) section!!
 2. Use [Get-ZimmermanTools](https://download.ericzimmermanstools.com/Get-ZimmermanTools.zip) to download all programs at once and keep your tool set current
     - Use **-Dest** to control where the tools ends up, else things end up in same directory as the script (recommended!)
-    - Use **-NetVersion** to control which flavor of tool you get: 4 for .net 4.6.2 and 6 for .net 6, or 9 for .net 9 (recommended!)
+    - Use **-NetVersion** to control which flavor of tool you get: 4 for .net 4.6.2, 6 for .net 6, 9 for .net 9 (recommended!), or 0 for all versions
     - The default is still net6 to allow people time to transition to .net 9
 3. All **GUI tools** will be updated to use .net 9 only but the legacy version will be kept in place as well (just not updated anymore)
 4. All **CLI tools** will continue to be built for both .net 4.6.2, .net 6 and .net 9 (for now)
@@ -76,10 +76,8 @@
 ## Requirements and troubleshooting
 
  - .net 4 software requires at least [Microsoft .net 4.6.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462) or newer! You will get errors running these without at least 4.6.2. When in doubt, install it!
- - .net 6 software requires at least [Microsoft .net 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) or newer! You will get errors running these without at least .net 6. When in doubt, install it! NOTE: Make sure you get the **Desktop** runtime if you plan on running any of
- the GUI programs
- - .net 9 software requires at least [Microsoft .net 9](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or newer! You will get errors running these without at least .net 9. When in doubt, install it! NOTE: Make sure you get the **Desktop** runtime if you plan on running any of
- the GUI programs
+ - .net 6 software requires at least [Microsoft .net 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) or newer! You will get errors running these without at least .net 6. When in doubt, install it! NOTE: Make sure you get the **Desktop** runtime if you plan on running any of the GUI programs
+ - .net 9 software requires at least [Microsoft .net 9](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or newer! You will get errors running these without at least .net 9. When in doubt, install it! NOTE: Make sure you get the **Desktop** runtime if you plan on running any of the GUI programs
  - **DO NOT RUN ANYTHING FOUND HERE FROM 'C:\PROGRAM FILES' DIRECTORY** (unless you run them as administrator)!
  - **DO NOT USE WINDOWS TO EXTRACT THINGS.** Use 7-Zip or WinRAR as Windows will block the DLLs!
  - All software is digitally signed. Once you verify the signature as coming from me, any anti-virus hits are false positives. When in doubt, download the files directly from here!
