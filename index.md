@@ -11,7 +11,8 @@
     - The default is still net6 to allow people time to transition to .net 9
 3. All **GUI tools** will be updated to use .net 9 only but the legacy version will be kept in place as well (just not updated anymore)
 4. All **CLI tools** will continue to be built for both .net 4.6.2, .net 6 and .net 9 (for now)
-5. **NOTE** net6 GUI tools will NOT be updated anymore as it is EOL. Only net9 GUIs will be updated from this point forward. NOTE THE VERSION # DIFFERENCES
+
+**NOTE** net6 GUI tools will NOT be updated anymore as it is EOL. Only net9 GUIs will be updated from this point forward. NOTE THE VERSION # DIFFERENCES
 
 ## Contribute/support opportunities
 
