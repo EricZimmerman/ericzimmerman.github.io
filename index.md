@@ -44,12 +44,12 @@
 | SDB Explorer |  - &vert; [2.0.0](https://download.ericzimmermanstools.com/net6/SDBExplorer.zip) &vert; [2.1.0](https://download.ericzimmermanstools.com/net9/SDBExplorer.zip)| Shim database GUI
 | SBECmd | [2.1.0](https://download.ericzimmermanstools.com/SBECmd.zip) &vert; [2.1.0](https://download.ericzimmermanstools.com/net6/SBECmd.zip) &vert; [2.1.0](https://download.ericzimmermanstools.com/net9/SBECmd.zip) | ShellBags Explorer, command line edition, for exporting shellbag data
 | ShellBags Explorer | - &vert; [2.0.0](https://download.ericzimmermanstools.com/net6/ShellBagsExplorer.zip) &vert; [2.1.0](https://download.ericzimmermanstools.com/net9/ShellBagsExplorer.zip) | GUI for browsing shellbags data. Handles locked files
-| SQLECmd | [1.1.0](https://download.ericzimmermanstools.com/SQLECmd.zip) &vert; [1.1.0](https://download.ericzimmermanstools.com/net6/SQLECmd.zip) &vert; [1.1.0](https://download.ericzimmermanstools.com/net9/SQLECmd.zip) | Find and process SQLite files according to your needs with maps!
+| SQLECmd | - &vert; [1.1.0](https://download.ericzimmermanstools.com/net6/SQLECmd.zip) &vert; [1.1.0](https://download.ericzimmermanstools.com/net9/SQLECmd.zip) | Find and process SQLite files according to your needs with maps!
 | SrumECmd | [1.0.0](https://download.ericzimmermanstools.com/SrumECmd.zip) &vert; [1.0.0](https://download.ericzimmermanstools.com/net6/SrumECmd.zip) &vert; [1.0.0](https://download.ericzimmermanstools.com/net9/SrumECmd.zip) | Process SRUDB.dat and (optionally) SOFTWARE hive for network, process, and energy info!
 | SumECmd | [1.0.0](https://download.ericzimmermanstools.com/SumECmd.zip) &vert; [1.0.0](https://download.ericzimmermanstools.com/net6/SumECmd.zip) &vert; [1.0.0](https://download.ericzimmermanstools.com/net9/SumECmd.zip) | Process Microsoft User Access Logs found under 'C:\Windows\System32\LogFiles\SUM'
 | Timeline Explorer | - &vert; [2.0.0.1](https://download.ericzimmermanstools.com/net6/TimelineExplorer.zip) &vert; [2.1.0](https://download.ericzimmermanstools.com/net9/TimelineExplorer.zip) | View CSV and Excel files, filter, group, sort, etc. with ease
 | VSCMount | - &vert; [1.5.0](https://download.ericzimmermanstools.com/net6/VSCMount.zip) &vert; [1.5.0](https://download.ericzimmermanstools.com/net9/VSCMount.zip) | Mount all VSCs on a drive letter to a given mount point
-| WxTCmd | [1.1.0](https://download.ericzimmermanstools.com/WxTCmd.zip) &vert; [1.1.0](https://download.ericzimmermanstools.com/net6/WxTCmd.zip) &vert; [1.1.0](https://download.ericzimmermanstools.com/net9/WxTCmd.zip) | Windows 10 Timeline database parser
+| WxTCmd | - &vert; [1.1.0](https://download.ericzimmermanstools.com/net6/WxTCmd.zip) &vert; [1.1.0](https://download.ericzimmermanstools.com/net9/WxTCmd.zip) | Windows 10 Timeline database parser
 
 ***
 
