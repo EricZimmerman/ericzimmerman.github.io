@@ -7,9 +7,9 @@
 1. **READ** the [Requirements and troubleshooting](https://ericzimmerman.github.io/#!index.md#requirements-and-troubleshooting) section!!
 2. Use [Get-ZimmermanTools](https://download.ericzimmermanstools.com/Get-ZimmermanTools.zip) to download all programs at once and keep your tool set current
     - Use **-Dest** to control where the tools ends up, else things end up in same directory as the script (recommended!)
-    - Use **-NetVersion** to control which flavor of tool you get: 4 for .net 4.6.2 or 9 for .net 9 (recommended!), or 0 for all versions. Default is 9
+    - Use **-NetVersion** to control which flavor of tool you get: 4 for .net 4.7.2 or 9 for .net 9 (recommended!), or 0 for all versions. Default is 9
 3. All **GUI tools** will be updated to use .net 9 only but the legacy net4 version will be kept in place as well (just not updated anymore)
-4. All **CLI tools** will continue to be built for both .net 4.6.2 and .net 9 (for now)
+4. All **CLI tools** will continue to be built for both .net 4.7.2 and .net 9 (for now)
 
 **NOTE** Only net9 GUIs will be updated from this point forward. NOTE THE VERSION # DIFFERENCES
 
@@ -74,7 +74,7 @@
 
 ## Requirements and troubleshooting
 
- - .net 4 software requires at least [Microsoft .net 4.6.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462) or newer! You will get errors running these without at least 4.6.2. When in doubt, install it!
+ - .net 4 software requires at least [Microsoft .net 4.7.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472) or newer! You will get errors running these without at least 4.7.2. When in doubt, install it!
  - .net 9 software requires at least [Microsoft .net 9](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or newer! You will get errors running these without at least .net 9. When in doubt, install it! NOTE: Make sure you get the **Desktop** runtime if you plan on running any of the GUI programs
  - **DO NOT RUN ANYTHING FOUND HERE FROM 'C:\PROGRAM FILES' DIRECTORY** (unless you run them as administrator)!
  - **DO NOT USE WINDOWS TO EXTRACT THINGS.** Use 7-Zip or WinRAR as Windows will block the DLLs!
