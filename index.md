@@ -54,7 +54,7 @@
 
 ## Other tools
 
-|Name  |<span style="display: inline-block; width:150px">Version (.net 4 &vert; 6 &vert; 9)</span> | Purpose
+|Name  |<span style="display: inline-block; width:150px">Version (.net 4 &vert; 9)</span> | Purpose
 |--|--|--
 | Get-ZimmermanTools | [NA](https://download.ericzimmermanstools.com/Get-ZimmermanTools.zip) | PowerShell script to auto discover and update everything above.
 | iisGeoLocate | [2026.5.0](https://download.ericzimmermanstools.com/iisGeolocate.zip) &vert;  [2026.5.0](https://download.ericzimmermanstools.com/net9/iisGeolocate.zip) | Geolocate IP addresses found in IIS logs, extracts unique IPs, records bad data from logs
