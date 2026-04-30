@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+---
+# Home
+
 <p align="center">
   <img src="https://ericzimmerman.github.io/pics/logoSmall.jpg">
 </p>
