@@ -6,5 +6,8 @@ repo_name: 'EricZimmerman/ericzimmerman.github.io'
 repo_url: 'https://github.com/EricZimmerman/ericzimmerman.github.io'
 nav:
     - Home: index.md
+    - Documentation: documentation.md
+    - How to build self-contained exes: selfcontained.md
+    - Benchmarks: benchmarks.md
 theme:
   name: 'material'
