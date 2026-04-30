@@ -1,5 +1,5 @@
-site_name: 
-site_description: 'Eric Zimmerman's Tools'
+site_name: "Eric Zimmerman's Tools"
+site_description: "Eric Zimmerman's Tools"
 site_author: 'Eric Zimmerman'
 docs_dir: docs/
 repo_name: 'EricZimmerman/ericzimmerman.github.io'
