@@ -1,0 +1,45 @@
+[project]
+site_name = "Eric Zimmerman's Tools"
+site_url = "https://ericzimmerman.github.io"
+site_description = "Eric Zimmerman's Tools"
+site_author = "Eric Zimmerman"
+copyright = "&copy; 2026 Eric Zimmerman"
+
+# Palette toggle for automatic mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+
+# Palette toggle for light mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+# Palette toggle for dark mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
+
+[project.theme]
+font.code = "JetBrains Mono"
+language = "en"
+features = [
+    "navigation.instant",
+    "navigation.tracking",
+    "navigation.tabs"
+]
+
+[project]
+extra_css = ["stylesheets/extra.css"]
+nav = [
+  {"Home" = "index.md"},
+  {"Documentation" = "documentation.md"},
+  {"How to build self-contained exes" = "selfcontained.md"},
+  {"Benchmarks" = "benchmarks.md"},
+  {"ChangeLog" = "https://download.mikestammer.com/ChangeLog.txt"}
+]
