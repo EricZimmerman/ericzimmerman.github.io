@@ -2,6 +2,7 @@
 site_name = "Eric Zimmerman's Tools"
 site_url = "https://ericzimmerman.github.io"
 site_description = "Eric Zimmerman's Tools"
+docs_dir = "docs"
 site_author = "Eric Zimmerman"
 copyright = "&copy; 2026 Eric Zimmerman"
 repo_name = 'EricZimmerman/ericzimmerman.github.io'
