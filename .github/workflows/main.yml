@@ -1,18 +1,51 @@
-name: Publish docs via GitHub Pages
+name: Documentation
 on:
   push:
     branches:
       - master
-
+      - main
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 jobs:
-  build:
-    name: Deploy docs
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout master
-        uses: actions/checkout@v1
+      - uses: actions/configure-pages@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - run: pip install zensical
+      - run: zensical build --clean 
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - uses: actions/deploy-pages@v4
+        id: deployment
 
-      - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+# name: Publish docs via GitHub Pages
+#on:
+ # push:
+ #   branches:
+ #     - master
+
+#jobs:
+#  build:
+#    name: Deploy docs
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout master
+#        uses: actions/checkout@v1
+
+      #- name: Deploy docs
+      #  uses: mhausenblas/mkdocs-deploy-gh-pages@master
+      #  env:
+       #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+       
