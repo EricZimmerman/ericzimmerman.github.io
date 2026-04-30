@@ -15,6 +15,8 @@ nav = [
   {"ChangeLog" = "https://download.mikestammer.com/ChangeLog.txt"}
 ]
 
+[project.markdown_extensions.abbr]
+[project.markdown_extensions.admonition]
 
 # Palette toggle for automatic mode
 [[project.theme.palette]]
