@@ -18,7 +18,10 @@ hide:
 3. All **GUI tools** will be updated to use .net 9 only but the legacy net4 version will be kept in place as well (just not updated anymore)
 4. All **CLI tools** will continue to be built for both .net 4.7.2 and .net 9 (for now)
 
-**NOTE** Only net9 GUIs will be updated from this point forward. NOTE THE VERSION # DIFFERENCES
+!!! note
+
+    Only net9 GUIs will be updated from this point forward. NOTE THE VERSION # DIFFERENCES
+
 
 ## Contribute/support opportunities
 
