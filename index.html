@@ -1,0 +1,919 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Eric Zimmerman's Tools">
+      
+      
+        <meta name="author" content="Eric Zimmerman">
+      
+      
+      
+      
+        <link rel="next" href="documentation/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Eric Zimmerman's Tools</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tldr" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Eric Zimmerman&#39;s Tools" class="md-header__button md-logo" aria-label="Eric Zimmerman's Tools" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Eric Zimmerman's Tools
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/EricZimmerman/ericzimmerman.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    EricZimmerman/ericzimmerman.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="documentation/" class="md-tabs__link">
+        
+  
+    
+  
+  Documentation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="selfcontained/" class="md-tabs__link">
+        
+  
+    
+  
+  How to build self-contained exes
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="benchmarks/" class="md-tabs__link">
+        
+  
+    
+  
+  Benchmarks
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://download.mikestammer.com/ChangeLog.txt" class="md-tabs__link">
+        
+  
+    
+  
+  ChangeLog
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Eric Zimmerman&#39;s Tools" class="md-nav__button md-logo" aria-label="Eric Zimmerman's Tools" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Eric Zimmerman's Tools
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/EricZimmerman/ericzimmerman.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    EricZimmerman/ericzimmerman.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      TL;DR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributesupport-opportunities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contribute/support opportunities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forensic-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forensic tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other files
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-and-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements and troubleshooting
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="documentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="selfcontained/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to build self-contained exes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="benchmarks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Benchmarks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://download.mikestammer.com/ChangeLog.txt" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ChangeLog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      TL;DR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributesupport-opportunities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contribute/support opportunities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forensic-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forensic tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other files
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-and-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements and troubleshooting
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Home</h1>
+
+<p align="center">
+  <img src="https://ericzimmerman.github.io/pics/logoSmall.jpg">
+</p>
+
+<h2 id="tldr">TL;DR</h2>
+<ol>
+<li><strong>READ</strong> the <a href="https://ericzimmerman.github.io/#!index.md#requirements-and-troubleshooting">Requirements and troubleshooting</a> section!!</li>
+<li>Use <a href="https://download.ericzimmermanstools.com/Get-ZimmermanTools.zip">Get-ZimmermanTools</a> to download all programs at once and keep your tool set current<ul>
+<li>Use <strong>-Dest</strong> to control where the tools ends up, else things end up in same directory as the script (recommended!)</li>
+<li>Use <strong>-NetVersion</strong> to control which flavor of tool you get: 4 for .net 4.7.2 or 9 for .net 9 (recommended!), or 0 for all versions. Default is 9</li>
+</ul>
+</li>
+<li>All <strong>GUI tools</strong> will be updated to use .net 9 only but the legacy net4 version will be kept in place as well (just not updated anymore)</li>
+<li>All <strong>CLI tools</strong> will continue to be built for both .net 4.7.2 and .net 9 (for now)</li>
+</ol>
+<p><strong>NOTE</strong> Only net9 GUIs will be updated from this point forward. NOTE THE VERSION # DIFFERENCES</p>
+<h2 id="contributesupport-opportunities">Contribute/support opportunities</h2>
+<p><a href="https://github.com/sponsors/EricZimmerman"><img alt="Donate" src="https://ericzimmerman.github.io/pics/Quarter16.png" /></a> <strong><a href="https://github.com/sponsors/EricZimmerman">GitHub Sponsors</a></strong></p>
+<p><a href="https://paypal.me/ericrzimmerman"><img alt="Donate" src="https://ericzimmerman.github.io/pics/Quarter16.png" /></a> <strong><a href="https://paypal.me/ericrzimmerman">PayPal</a></strong></p>
+<h2 id="forensic-tools">Forensic tools</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th><span style="display: inline-block; width:150px">Version (.net 4 &vert; 9)</span></th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AmcacheParser</td>
+<td><a href="https://download.ericzimmermanstools.com/AmcacheParser.zip">2026.5.0</a> &vert;  <a href="https://download.ericzimmermanstools.com/net9/AmcacheParser.zip">2026.5.0</a></td>
+<td>Amcache.hve parser with lots of extra features. Handles locked files</td>
+</tr>
+<tr>
+<td>AppCompatCacheParser</td>
+<td><a href="https://download.ericzimmermanstools.com/AppCompatCacheParser.zip">2026.5.0</a> &vert;  <a href="https://download.ericzimmermanstools.com/net9/AppCompatCacheParser.zip">2026.5.0</a></td>
+<td>AppCompatCache aka ShimCache parser. Handles locked files</td>
+</tr>
+<tr>
+<td>bstrings</td>
+<td><a href="https://download.ericzimmermanstools.com/bstrings.zip">2026.5.0</a> &vert;  <a href="https://download.ericzimmermanstools.com/net9/bstrings.zip">2026.5.0</a></td>
+<td>Find them strings yo. Built in regex patterns. Handles locked files</td>
+</tr>
+<tr>
+<td>EvtxECmd</td>
+<td><a href="https://download.ericzimmermanstools.com/EvtxECmd.zip">2026.5.0</a> &vert;  <a href="https://download.ericzimmermanstools.com/net9/EvtxECmd.zip">2026.5.0</a></td>
+<td>Event log (evtx) parser with standardized CSV, XML, and json output! Custom maps, locked file support, and more!</td>
+</tr>
+<tr>
+<td>EZViewer</td>
+<td>- &vert; <a href="https://download.ericzimmermanstools.com/net9/EZViewer.zip">2026.5.0</a></td>
+<td>Standalone, zero dependency viewer for .doc, .docx, .xls, .xlsx, .txt, .log, .rtf, .otd, .htm, .html, .mht, .csv, and .pdf. Any non-supported files are shown in a hex editor (with data interpreter!)</td>
+</tr>
+<tr>
+<td>Hasher</td>
+<td><a href="https://download.ericzimmermanstools.com/hasher.zip">2026.5.0</a> &vert; -</td>
+<td>Hash all the things</td>
+</tr>
+<tr>
+<td>JLECmd</td>
+<td><a href="https://download.ericzimmermanstools.com/JLECmd.zip">2026.5.0</a> &vert;  <a href="https://download.ericzimmermanstools.com/net9/JLECmd.zip">2026.5.0</a></td>
+<td>Jump List parser</td>
+</tr>
+<tr>
+<td>JumpList Explorer</td>
+<td>- &vert; <a href="https://download.ericzimmermanstools.com/net9/JumpListExplorer.zip">2026.5.0</a></td>
+<td>GUI based Jump List viewer</td>
+</tr>
+<tr>
+<td>LECmd</td>
+<td><a href="https://download.ericzimmermanstools.com/LECmd.zip">2026.5.0</a> &vert;  <a href="https://download.ericzimmermanstools.com/net9/LECmd.zip">2026.5.0</a></td>
+<td>Parse lnk files</td>
+</tr>
+<tr>
+<td>MFTECmd</td>
+<td><a href="https://download.ericzimmermanstools.com/MFTECmd.zip">2026.5.0</a> &vert;  <a href="https://download.ericzimmermanstools.com/net9/MFTECmd.zip">2026.5.0</a></td>
+<td>$MFT, $Boot, $J, $SDS, $I30, and $LogFile (coming soon) parser. Handles locked files</td>
+</tr>
+<tr>
+<td>MFTExplorer</td>
+<td>- &vert; <a href="https://download.ericzimmermanstools.com/net9/MFTExplorer.zip">2026.5.0</a></td>
+<td>Graphical $MFT viewer</td>
+</tr>
+<tr>
+<td>PECmd</td>
+<td><a href="https://download.ericzimmermanstools.com/PECmd.zip">2026.5.0</a> &vert;  <a href="https://download.ericzimmermanstools.com/net9/PECmd.zip">2026.5.0</a></td>
+<td>Prefetch parser</td>
+</tr>
+<tr>
+<td>RBCmd</td>
+<td><a href="https://download.ericzimmermanstools.com/RBCmd.zip">2026.5.0</a> &vert;  <a href="https://download.ericzimmermanstools.com/net9/RBCmd.zip">2026.5.0</a></td>
+<td>Recycle Bin artifact (INFO2/$I) parser</td>
+</tr>
+<tr>
+<td>RecentFileCacheParser</td>
+<td><a href="https://download.ericzimmermanstools.com/RecentFileCacheParser.zip">2026.5.0</a> &vert;  <a href="https://download.ericzimmermanstools.com/net9/RecentFileCacheParser.zip">2026.5.0</a></td>
+<td>RecentFileCache parser</td>
+</tr>
+<tr>
+<td>RECmd</td>
+<td><a href="https://download.ericzimmermanstools.com/RECmd.zip">2026.5.0</a> &vert;  <a href="https://download.ericzimmermanstools.com/net9/RECmd.zip">2026.5.0</a></td>
+<td>Powerful command line Registry tool searching, multi-hive support, plugins, and more</td>
+</tr>
+<tr>
+<td>Registry Explorer</td>
+<td>- &vert; <a href="https://download.ericzimmermanstools.com/net9/RegistryExplorer.zip">2026.5.0</a></td>
+<td>Registry viewer with searching, multi-hive support, plugins, and more. Handles locked files</td>
+</tr>
+<tr>
+<td>RLA</td>
+<td><a href="https://download.ericzimmermanstools.com/rla.zip">2026.5.0</a> &vert;  <a href="https://download.ericzimmermanstools.com/net9/rla.zip">2026.5.0</a></td>
+<td>Replay transaction logs and update Registry hives so they are no longer dirty. Useful when tools do not know how to handle transaction logs</td>
+</tr>
+<tr>
+<td>SDB Explorer</td>
+<td>- &vert; <a href="https://download.ericzimmermanstools.com/net9/SDBExplorer.zip">2026.5.0</a></td>
+<td>Shim database GUI</td>
+</tr>
+<tr>
+<td>SBECmd</td>
+<td><a href="https://download.ericzimmermanstools.com/SBECmd.zip">2026.5.0</a> &vert;  <a href="https://download.ericzimmermanstools.com/net9/SBECmd.zip">2026.5.0</a></td>
+<td>ShellBags Explorer, command line edition, for exporting shellbag data</td>
+</tr>
+<tr>
+<td>ShellBags Explorer</td>
+<td>-  &vert; <a href="https://download.ericzimmermanstools.com/net9/ShellBagsExplorer.zip">2026.5.0</a></td>
+<td>GUI for browsing shellbags data. Handles locked files</td>
+</tr>
+<tr>
+<td>SQLECmd</td>
+<td>- &vert; <a href="https://download.ericzimmermanstools.com/net9/SQLECmd.zip">2026.5.0</a></td>
+<td>Find and process SQLite files according to your needs with maps!</td>
+</tr>
+<tr>
+<td>SrumECmd</td>
+<td><a href="https://download.ericzimmermanstools.com/SrumECmd.zip">2026.5.0</a> &vert;  <a href="https://download.ericzimmermanstools.com/net9/SrumECmd.zip">2026.5.0</a></td>
+<td>Process SRUDB.dat and (optionally) SOFTWARE hive for network, process, and energy info!</td>
+</tr>
+<tr>
+<td>SumECmd</td>
+<td><a href="https://download.ericzimmermanstools.com/SumECmd.zip">2026.5.0</a> &vert;  <a href="https://download.ericzimmermanstools.com/net9/SumECmd.zip">2026.5.0</a></td>
+<td>Process Microsoft User Access Logs found under 'C:\Windows\System32\LogFiles\SUM'</td>
+</tr>
+<tr>
+<td>Timeline Explorer</td>
+<td>- &vert; <a href="https://download.ericzimmermanstools.com/net9/TimelineExplorer.zip">2026.5.0</a></td>
+<td>View CSV and Excel files, filter, group, sort, etc. with ease</td>
+</tr>
+<tr>
+<td>VSCMount</td>
+<td>- &vert; <a href="https://download.ericzimmermanstools.com/net9/VSCMount.zip">2026.5.0</a></td>
+<td>Mount all VSCs on a drive letter to a given mount point</td>
+</tr>
+<tr>
+<td>WxTCmd</td>
+<td>- &vert; <a href="https://download.ericzimmermanstools.com/net9/WxTCmd.zip">2026.5.0</a></td>
+<td>Windows 10 Timeline database parser</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="other-tools">Other tools</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th><span style="display: inline-block; width:150px">Version (.net 4 &vert; 9)</span></th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Get-ZimmermanTools</td>
+<td><a href="https://download.ericzimmermanstools.com/Get-ZimmermanTools.zip">NA</a></td>
+<td>PowerShell script to auto discover and update everything above.</td>
+</tr>
+<tr>
+<td>iisGeoLocate</td>
+<td><a href="https://download.ericzimmermanstools.com/iisGeolocate.zip">2026.5.0</a> &vert;  <a href="https://download.ericzimmermanstools.com/net9/iisGeolocate.zip">2026.5.0</a></td>
+<td>Geolocate IP addresses found in IIS logs, extracts unique IPs, records bad data from logs</td>
+</tr>
+<tr>
+<td>KAPE</td>
+<td><a href="https://kape/zip">NA</a></td>
+<td>Kroll Artifact Parser/Extractor: Flexible, high speed collection of files as well as processing of files. Many many features</td>
+</tr>
+<tr>
+<td>TimeApp</td>
+<td><a href="https://download.ericzimmermanstools.com/TimeApp.zip">2026.5.0</a> &vert; na</td>
+<td>A simple app that shows current time (local and UTC) and optionally, public IP address. Great for testing</td>
+</tr>
+<tr>
+<td>XWFIM</td>
+<td><a href="https://download.ericzimmermanstools.com/XWFIM.zip">NA</a> &vert; na</td>
+<td>X-Ways Forensics installation manager</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="other-files">Other files</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Version</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Change log</td>
+<td><a href="https://download.ericzimmermanstools.com/ChangeLog.txt">NA</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="requirements-and-troubleshooting">Requirements and troubleshooting</h2>
+<ul>
+<li>.net 4 software requires at least <a href="https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472">Microsoft .net 4.7.2</a> or newer! You will get errors running these without at least 4.7.2. When in doubt, install it!</li>
+<li>.net 9 software requires at least <a href="https://dotnet.microsoft.com/en-us/download/dotnet/9.0">Microsoft .net 9</a> or newer! You will get errors running these without at least .net 9. When in doubt, install it! NOTE: Make sure you get the <strong>Desktop</strong> runtime if you plan on running any of the GUI programs</li>
+<li><strong>DO NOT RUN ANYTHING FOUND HERE FROM 'C:\PROGRAM FILES' DIRECTORY</strong> (unless you run them as administrator)!</li>
+<li><strong>DO NOT USE WINDOWS TO EXTRACT THINGS.</strong> Use 7-Zip or WinRAR as Windows will block the DLLs!</li>
+<li>All software is digitally signed. Once you verify the signature as coming from me, any anti-virus hits are false positives. When in doubt, download the files directly from here!</li>
+<li><strong>If you get DPI scaling issues, make a shortcut (or directly against the exe), edit the properties, then click Compatibility. Under Change high DPI settings, check Override high DPI scaling behavior at bottom and choose System, then click OK out of the dialog</strong></li>
+</ul>
+<hr />
+<p>Open Source Development funding and support provided by the following contributors: <a href="http://sans.org/">SANS Institute</a> and <a href="http://dfir.sans.org/">SANS DFIR</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Eric Zimmerman
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
