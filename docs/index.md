@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://ericzimmerman.github.io/logoSmall.jpg">
+  <img src="https://ericzimmerman.github.io/pics/logoSmall.jpg">
 </p>
 
 ## TL;DR
@@ -15,9 +15,9 @@
 
 ## Contribute/support opportunities
 
-[![Donate](https://ericzimmerman.github.io/Quarter16.png)](https://github.com/sponsors/EricZimmerman) **[GitHub Sponsors](https://github.com/sponsors/EricZimmerman)**
+[![Donate](https://ericzimmerman.github.io/pics/Quarter16.png)](https://github.com/sponsors/EricZimmerman) **[GitHub Sponsors](https://github.com/sponsors/EricZimmerman)**
 
-[![Donate](https://ericzimmerman.github.io/Quarter16.png)](https://paypal.me/ericrzimmerman) **[PayPal](https://paypal.me/ericrzimmerman)**
+[![Donate](https://ericzimmerman.github.io/pics/Quarter16.png)](https://paypal.me/ericrzimmerman) **[PayPal](https://paypal.me/ericrzimmerman)**
 
 ## Forensic tools
 
