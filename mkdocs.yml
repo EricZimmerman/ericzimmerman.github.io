@@ -9,8 +9,13 @@ nav:
     - Documentation: documentation.md
     - How to build self-contained exes: selfcontained.md
     - Benchmarks: benchmarks.md
+    - ChangeLog: 'https://download.mikestammer.com/ChangeLog.txt'
 theme:
+  features:
+    - navigation.tabs
   name: 'material'
+  color_mode: auto
+  user_color_mode_toggle: true
   palette:
 
     # Palette toggle for light mode
