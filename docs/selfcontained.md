@@ -1,4 +1,9 @@
-<H1>How to build self-contained executables</H1>
+---
+hide:
+  - navigation
+---
+
+# How to build self-contained executables
 
 1. Pick a repository. In this example, we will use MFTECmd.
 2. Open a shell (like powershell for example) and change directories to where you want the repository cloned. Here, I am using `C:\Temp`
