@@ -68,7 +68,7 @@ hide:
 |--|--|--
 | Get-ZimmermanTools | [NA](https://download.ericzimmermanstools.com/Get-ZimmermanTools.zip) | PowerShell script to auto discover and update everything above.
 | iisGeoLocate | [2026.5.0](https://download.ericzimmermanstools.com/iisGeolocate.zip) &vert;  [2026.5.0](https://download.ericzimmermanstools.com/net9/iisGeolocate.zip) | Geolocate IP addresses found in IIS logs, extracts unique IPs, records bad data from logs
-| KAPE | [NA](https://kape/zip) | Kroll Artifact Parser/Extractor: Flexible, high speed collection of files as well as processing of files. Many many features
+| KAPE | [NA](https://kape.zip) | Kroll Artifact Parser/Extractor: Flexible, high speed collection of files as well as processing of files. Many many features
 | TimeApp | [2026.5.0](https://download.ericzimmermanstools.com/TimeApp.zip) &vert; na | A simple app that shows current time (local and UTC) and optionally, public IP address. Great for testing
 | XWFIM | [NA](https://download.ericzimmermanstools.com/XWFIM.zip) &vert; na | X-Ways Forensics installation manager
 
