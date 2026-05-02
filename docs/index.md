@@ -11,16 +11,15 @@ hide:
 
 ## TL;DR
 
-1. **READ** the [Requirements and troubleshooting](https://ericzimmerman.github.io/#!index.md#requirements-and-troubleshooting) section!!
+1. **READ** the [Requirements and troubleshooting](https://ericzimmerman.github.io/#requirements-and-troubleshooting) section!!
 2. Use [Get-ZimmermanTools](https://download.ericzimmermanstools.com/Get-ZimmermanTools.zip) to download all programs at once and keep your tool set current
     - Use **-Dest** to control where the tools ends up, else things end up in same directory as the script (recommended!)
-    - Use **-NetVersion** to control which flavor of tool you get: 4 for .net 4.7.2 or 9 for .net 9 (recommended!), or 0 for all versions. Default is 9
-3. All **GUI tools** will be updated to use .net 9 only but the legacy net4 version will be kept in place as well (just not updated anymore)
-4. All **CLI tools** will continue to be built for both .net 4.7.2 and .net 9 (for now)
+    - Use **-NetVersion** to control which flavor of tool you get: `4` for .net 4.7.2 or `9` for .net 9 (recommended!), or `0` for all versions. Default is `9`
 
 !!! note
 
-    Only net9 GUIs will be updated from this point forward
+    - All **GUI tools** are updated to use .net 9 only. Legacy net4 versions are no longer available.
+    - All **CLI tools** continue to be built for both .net 4.7.2 and .net 9
 
 
 ## Contribute/support opportunities
@@ -60,8 +59,6 @@ hide:
 | VSCMount | - &vert; [2026.5.0](https://download.ericzimmermanstools.com/net9/VSCMount.zip) | Mount all VSCs on a drive letter to a given mount point
 | WxTCmd | - &vert; [2026.5.0](https://download.ericzimmermanstools.com/net9/WxTCmd.zip) | Windows 10 Timeline database parser
 
-***
-
 ## Other tools
 
 |Name  |<span style="display: inline-block; width:150px">Version (.net 4 &vert; 9)</span> | Purpose
@@ -69,16 +66,14 @@ hide:
 | Get-ZimmermanTools | [NA](https://download.ericzimmermanstools.com/Get-ZimmermanTools.zip) | PowerShell script to auto discover and update everything above.
 | iisGeoLocate | [2026.5.0](https://download.ericzimmermanstools.com/iisGeolocate.zip) &vert;  [2026.5.0](https://download.ericzimmermanstools.com/net9/iisGeolocate.zip) | Geolocate IP addresses found in IIS logs, extracts unique IPs, records bad data from logs
 | KAPE | [NA](https://kape.zip) | Kroll Artifact Parser/Extractor: Flexible, high speed collection of files as well as processing of files. Many many features
-| TimeApp | [2026.5.0](https://download.ericzimmermanstools.com/TimeApp.zip) &vert; na | A simple app that shows current time (local and UTC) and optionally, public IP address. Great for testing
-| XWFIM | [NA](https://download.ericzimmermanstools.com/XWFIM.zip) &vert; na | X-Ways Forensics installation manager
-
-***
+| TimeApp | [2026.5.0](https://download.ericzimmermanstools.com/TimeApp.zip) &vert; - | A simple app that shows current time (local and UTC) and optionally, public IP address. Great for testing
+| XWFIM | [NA](https://download.ericzimmermanstools.com/XWFIM.zip) &vert; - | X-Ways Forensics installation manager
 
 ## Other files
 
 |Name  |Version| Purpose
 |--|--|--
-| Change log | [NA](https://download.ericzimmermanstools.com/ChangeLog.txt)| 
+| Change log | [NA](https://download.ericzimmermanstools.com/ChangeLog.txt)| To log changes
 
 ***
 
@@ -89,7 +84,7 @@ hide:
      - **DO NOT USE WINDOWS TO EXTRACT THINGS.** Use 7-Zip or WinRAR as Windows will block the DLLs!
 
  - .net 4 software requires at least [Microsoft .net 4.7.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472) or newer! You will get errors running these without at least 4.7.2. When in doubt, install it!
- - .net 9 software requires at least [Microsoft .net 9](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or newer! You will get errors running these without at least .net 9. When in doubt, install it! NOTE: Make sure you get the **Desktop** runtime if you plan on running any of the GUI programs
+ - .net 9 software requires at least [Microsoft .net 9](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or newer! You will get errors running these without at least .net 9. When in doubt, install it! Be sure sure you get the **Desktop** runtime if you plan on running any of the GUI programs
  - All software is digitally signed. Once you verify the signature as coming from me, any anti-virus hits are false positives. When in doubt, download the files directly from here!
  
 
