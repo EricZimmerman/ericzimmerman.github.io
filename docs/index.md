@@ -20,7 +20,7 @@ hide:
 
 !!! note
 
-    Only net9 GUIs will be updated from this point forward. NOTE THE VERSION # DIFFERENCES
+    Only net9 GUIs will be updated from this point forward
 
 
 ## Contribute/support opportunities
@@ -83,13 +83,19 @@ hide:
 ***
 
 ## Requirements and troubleshooting
+!!! warning
+
+     - **DO NOT RUN ANYTHING FOUND HERE FROM 'C:\PROGRAM FILES' DIRECTORY** (unless you run them as administrator)!
+     - **DO NOT USE WINDOWS TO EXTRACT THINGS.** Use 7-Zip or WinRAR as Windows will block the DLLs!
 
  - .net 4 software requires at least [Microsoft .net 4.7.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472) or newer! You will get errors running these without at least 4.7.2. When in doubt, install it!
  - .net 9 software requires at least [Microsoft .net 9](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or newer! You will get errors running these without at least .net 9. When in doubt, install it! NOTE: Make sure you get the **Desktop** runtime if you plan on running any of the GUI programs
- - **DO NOT RUN ANYTHING FOUND HERE FROM 'C:\PROGRAM FILES' DIRECTORY** (unless you run them as administrator)!
- - **DO NOT USE WINDOWS TO EXTRACT THINGS.** Use 7-Zip or WinRAR as Windows will block the DLLs!
  - All software is digitally signed. Once you verify the signature as coming from me, any anti-virus hits are false positives. When in doubt, download the files directly from here!
- - **If you get DPI scaling issues, make a shortcut (or directly against the exe), edit the properties, then click Compatibility. Under Change high DPI settings, check Override high DPI scaling behavior at bottom and choose System, then click OK out of the dialog**
+ 
+
+!!! tip
+
+    If you get DPI scaling issues, make a shortcut (or directly against the exe), edit the properties, then click Compatibility. Under Change high DPI settings, check Override high DPI scaling behavior at bottom and choose System, then click OK out of the dialog
 
 ***
 
