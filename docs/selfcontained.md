@@ -5,6 +5,10 @@ hide:
 
 # How to build self-contained executables
 
+!!! note
+
+    The screenshots below show .net 9 (`net9.0`). Use the .net 10 (`net10.0`) commands and paths in the steps instead.
+
 1. Pick a repository. In this example, we will use MFTECmd.
 2. Open a shell (like powershell for example) and change directories to where you want the repository cloned. Here, I am using `C:\Temp`
 3. Run `git clone https://github.com/EricZimmerman/MFTECmd.git`
@@ -12,18 +16,18 @@ hide:
     ![Clone](pics/sc/clone.png)
 
 4. Change to the repository directory `cd c:\Temp\MFTECmd\`
-5. Build with `dotnet publish -f net9.0 -r win-x64 -p:PublishSingleFile=true --self-contained true -p:IncludeNativeLibrariesForSelfExtract=true`
+5. Build with `dotnet publish -f net10.0 -r win-x64 -p:PublishSingleFile=true --self-contained true -p:IncludeNativeLibrariesForSelfExtract=true`
 
     ![Build](pics/sc/build.png)
 
-6. go to `C:\Temp\MFTECmd\MFTECmd\bin\Release\net9.0\win-x64\publish` and you will see your executable
+6. go to `C:\Temp\MFTECmd\MFTECmd\bin\Release\net10.0\win-x64\publish` and you will see your executable
 
     ![Result](pics/sc/result.png)
 
 7. ???
 8. Profit
 
-As an example, the 'normal' net9 version of MFTECmd is 2.56MB across 3 files, whereas the self-contained version is 74.4MB!
+As an example, the 'normal' net10 version of MFTECmd is 2.56MB across 3 files, whereas the self-contained version is 74.4MB!
 
 This is certainly a tradeoff, but it works.
 
