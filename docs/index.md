@@ -18,7 +18,7 @@ hide:
 
 !!! note
 
-    - **GUI tools** are .net 10 only, except Hasher and TimeApp, which are also built for .net 4.
+    - **GUI tools** are .net 10 only, except TimeApp, which is also built for .net 4.
     - **CLI tools** are built for both .net 4.7.2 and .net 10, except AmcacheParser, SQLECmd, VSCMount and WxTCmd, which are .net 10 only.
 
 
@@ -37,7 +37,7 @@ hide:
 | bstrings | [2026.10.0](https://download.ericzimmermanstools.com/bstrings.zip) &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/bstrings.zip) | Find them strings yo. Built in regex patterns. Handles locked files
 | EvtxECmd | [2026.10.1](https://download.ericzimmermanstools.com/EvtxECmd.zip) &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/EvtxECmd.zip) | Event log (evtx) parser with standardized CSV, XML, and json output! Custom maps, locked file support, and more!
 | EZViewer | - &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/EZViewer.zip) | Standalone, zero dependency viewer for .doc, .docx, .xls, .xlsx, .txt, .log, .rtf, .otd, .htm, .html, .mht, .csv, and .pdf. Any non-supported files are shown in a hex editor (with data interpreter!)
-| Hasher | [2026.10.0](https://download.ericzimmermanstools.com/hasher.zip) &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/hasher.zip) | Hash all the things
+| Hasher | - &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/hasher.zip) | Hash all the things
 | JLECmd | [2026.10.2](https://download.ericzimmermanstools.com/JLECmd.zip) &vert; [2026.10.2](https://download.ericzimmermanstools.com/net/JLECmd.zip) | Jump List parser
 | JumpList Explorer | - &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/JumpListExplorer.zip) | GUI based Jump List viewer
 | LECmd | [2026.10.1](https://download.ericzimmermanstools.com/LECmd.zip) &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/LECmd.zip) | Parse lnk files
