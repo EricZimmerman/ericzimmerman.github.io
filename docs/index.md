@@ -73,7 +73,7 @@ hide:
 
 |Name  |Version| Purpose
 |--|--|--
-| Change log | [NA](https://download.ericzimmermanstools.com/ChangeLog.txt)| To log changes
+| Change log | [ChangeLog](changelog.md)| To log changes
 
 ***
 

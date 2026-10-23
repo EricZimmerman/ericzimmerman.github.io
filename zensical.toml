@@ -13,7 +13,7 @@ nav = [
   {"Documentation" = "documentation.md"},
   {"How to build self-contained exes" = "selfcontained.md"},
   {"Benchmarks" = "benchmarks.md"},
-  {"ChangeLog" = "https://download.ericzimmermanstools.com/ChangeLog.txt"}
+  {"ChangeLog" = "changelog.md"}
 ]
 
 [project.markdown_extensions.abbr]
