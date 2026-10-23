@@ -3,32 +3,76 @@ hide:
   - navigation
 ---
 
-# How to build self-contained executables
+# 📦 How to build self-contained executables
 
-!!! note
+The downloads need the .NET runtime installed. If you would rather not install it, on a forensic workstation or a
+machine you don't control for example, you can build any command line tool yourself as **one self-contained file**
+with the runtime inside it.
 
-    The screenshots below show .net 9 (`net9.0`). Use the .net 10 (`net10.0`) commands and paths in the steps instead.
+!!! info "The tradeoff"
 
-1. Pick a repository. In this example, we will use MFTECmd.
-2. Open a shell (like powershell for example) and change directories to where you want the repository cloned. Here, I am using `C:\Temp`
-3. Run `git clone https://github.com/EricZimmerman/MFTECmd.git`
+    The normal .NET 10 MFTECmd is **2.6 MB** in 3 files and needs the .NET 10 runtime. Built self-contained, it is
+    **one 72.6 MB file** that needs nothing else. Same tool, same output.
+
+## 🧰 What you need
+
+- [git](https://git-scm.com/downloads)
+- The [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) (the SDK, not only the runtime)
+
+## 🛠️ Steps
+
+This example builds MFTECmd. Every command line tool works the same way.
+
+1. **Clone the repository.** Open a shell (PowerShell, for example), go to where you want it (here `C:\Temp`) and run:
+
+    ```text
+    git clone https://github.com/EricZimmerman/MFTECmd.git
+    ```
 
     ![Clone](pics/sc/clone.png)
 
-4. Change to the repository directory `cd c:\Temp\MFTECmd\`
-5. Build with `dotnet publish -f net10.0 -r win-x64 -p:PublishSingleFile=true --self-contained true -p:IncludeNativeLibrariesForSelfExtract=true`
+2. **Go into the repository:**
+
+    ```text
+    cd C:\Temp\MFTECmd
+    ```
+
+3. **Build it.** Pick the system it will run on:
+
+    === "Windows"
+
+        ```text
+        dotnet publish -f net10.0 -r win-x64 -p:PublishSingleFile=true --self-contained true -p:IncludeNativeLibrariesForSelfExtract=true
+        ```
+
+    === "Linux"
+
+        ```text
+        dotnet publish -f net10.0 -r linux-x64 -p:PublishSingleFile=true --self-contained true -p:IncludeNativeLibrariesForSelfExtract=true
+        ```
+
+    === "macOS (Apple silicon)"
+
+        ```text
+        dotnet publish -f net10.0 -r osx-arm64 -p:PublishSingleFile=true --self-contained true -p:IncludeNativeLibrariesForSelfExtract=true
+        ```
 
     ![Build](pics/sc/build.png)
 
-6. go to `C:\Temp\MFTECmd\MFTECmd\bin\Release\net10.0\win-x64\publish` and you will see your executable
+4. **Find the result** in the `publish` folder, for Windows
+   `C:\Temp\MFTECmd\MFTECmd\bin\Release\net10.0\win-x64\publish`:
 
     ![Result](pics/sc/result.png)
 
-7. ???
-8. Profit
+5. ✅ **Test it** before you rely on it: run it with `--help`, then on some test data.
 
-As an example, the 'normal' net10 version of MFTECmd is 2.56MB across 3 files, whereas the self-contained version is 74.4MB!
+The screenshots show .NET 9 (`net9.0`); use the `net10.0` commands and paths above.
 
-This is certainly a tradeoff, but it works.
+!!! tip "Good to know"
 
-Simply repeat this for any other executable you want, then TEST it out.
+    - Repeat the steps for every tool you want; each one is built from its own repository.
+    - Some tools only run on Windows whatever you build them for: SrumECmd and SumECmd (they use Windows' ESE
+      database engine) and VSCMount.
+    - `IncludeNativeLibrariesForSelfExtract=true` puts native libraries (the SQLite files of AmcacheParser, WxTCmd
+      and SQLECmd) inside the file, and .NET extracts them to a temporary folder when the tool runs. Leave that option
+      out to keep them as files next to the tool instead.
