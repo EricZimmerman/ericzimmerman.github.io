@@ -18,15 +18,15 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 
 | Program | Version | Program | Version | Program | Version |
 |--|--|--|--|--|--|
-| AmcacheParser | 2026.10.0 | LECmd | 2026.10.1 | SDB Explorer | 2026.10.0 |
-| AppCompatCacheParser | 2026.10.0 | MFTECmd | 2026.10.2 | ShellBags Explorer | 2026.10.0 |
+| AmcacheParser | 2026.10.0 | LECmd | 2026.10.2 | SDB Explorer | 2026.10.0 |
+| AppCompatCacheParser | 2026.10.0 | MFTECmd | 2026.10.2 | ShellBags Explorer | 2026.10.1 |
 | bstrings | 2026.10.0 | PECmd | 2026.10.2 | SQLECmd | 2026.10.1 |
 | EvtxECmd | 2026.10.1 | RBCmd | 2026.10.0 | SrumECmd | 2026.10.0 |
-| EZViewer | 2026.10.0 | RECmd | 2026.10.0 | SumECmd | 2026.10.0 |
+| EZViewer | 2026.10.0 | RECmd | 2026.10.1 | SumECmd | 2026.10.0 |
 | Hasher | 2026.10.0 | rla | 2026.10.0 | VSCMount | 2026.10.0 |
 | iisGeolocate | 2026.10.0 | RecentFileCacheParser | 2026.10.1 | WxTCmd | 2026.10.0 |
-| JLECmd | 2026.10.2 | Registry Explorer | 2026.10.0 | | |
-| JumpList Explorer | 2026.10.0 | SBECmd | 2026.10.0 | | |
+| JLECmd | 2026.10.3 | Registry Explorer | 2026.10.1 | | |
+| JumpList Explorer | 2026.10.1 | SBECmd | 2026.10.1 | | |
 
 ### 📚 Registry
 
@@ -55,6 +55,14 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - A locked file that can't be read (a bad path, a VSC that is gone, a damaged volume) is reported and the other files are still read; it stopped the whole list
 - VSC creation times use the UTC offset WMI gives; a VSC on a volume that WMI doesn't list no longer stops the run, and volumes mounted in a folder no longer match a drive letter
 - A VSC that fails to mount says why, and a failed mount can no longer be reported as mounted
+
+### 📚 ExtensionBlocks
+
+*The shell items and extension blocks used by LECmd, JLECmd and JumpList Explorer (through Lnk and JumpList), SBECmd and ShellBags Explorer, and the RECmd plugins with shell items (LastVisitedPidlMRU, OpenSavePidlMRU, RecentDocs, Taskband) in RECmd and Registry Explorer*
+
+- A root folder item of type 0x2E with extension blocks after its GUID (a known folder such as Downloads, with 0x48 at offset 3) is read with its folder name and times; it failed with "Index and count must refer to a location within the buffer" (2026.10.8)
+- Zip contents items with data in bytes 4-9 are read (they were unknown items of types such as 0x6C, 0x7F and 0x8A) (2026.10.8)
+- Checked against every item of the ShellBags test corpus (68,598 shell items) and every shell item of the LNK and jump list test files (169,919, unchanged)
 
 ### ⌨️ AmcacheParser
 
@@ -212,6 +220,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Property rows are disposed when the properties panel is cleared (they were only removed); the LNK details window fills its property store and Vista ID lists in one repaint
 - Reads the same new shell items as JLECmd (Windows 11 archive folders, document drive items, 0x3D folders, OneDrive and Creative Cloud Files GUIDs named)
 - Error reports and logged exceptions include source file and line numbers
+- Uses JumpList 2026.10.9, Lnk 2026.10.10 and ExtensionBlocks 2026.10.8 (see ExtensionBlocks above) (2026.10.1)
 
 ### ⌨️ JLECmd
 
@@ -234,6 +243,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Error reports and logged exceptions include source file and line numbers
 - Exit code 1 when the tool fails (invalid arguments, a missing input path, output that can't be written, jump lists or folders under -d it can't read); damaged jump lists are reported and exit 0 (it was always 0)
 - Folders under -d that can't be read are reported ("Unable to read folder &lt;path&gt;: &lt;reason&gt;") and the rest is still processed; they were skipped silently
+- Uses JumpList 2026.10.9, Lnk 2026.10.10 and ExtensionBlocks 2026.10.8: 0x2E root folder items with extension blocks and zip contents with data in bytes 4-9 are read (see ExtensionBlocks above) (2026.10.3)
 
 ### ⌨️ LECmd
 
@@ -260,6 +270,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Error reports and logged exceptions include source file and line numbers
 - Exit code 1 when the tool fails (invalid arguments, a missing input path, output that can't be written, lnk files or folders under -d it can't read); damaged lnk files are reported and exit 0 (it was always 0)
 - Folders under -d that can't be read are reported ("Unable to read folder &lt;path&gt;: &lt;reason&gt;") and the rest is still processed; they were skipped silently
+- Uses Lnk 2026.10.10 and ExtensionBlocks 2026.10.8: 0x2E root folder items with extension blocks and zip contents with data in bytes 4-9 are read (see ExtensionBlocks above) (2026.10.2)
 
 ### 🖥️ MFT Explorer
 
@@ -379,6 +390,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Exit code 1 when the tool fails (invalid arguments or batch file, a missing input path, a hive or folder it can't read, including subfolders under -d, a dirty hive without its transaction logs when --nl isn't given, output that can't be written, a plugin that throws or can't be loaded in batch mode); damaged hives are reported and exit 0 (it was always 0)
 - **rla**: Exit code 1 when the tool fails (invalid arguments, a missing input path, a hive or folder it can't read, including subfolders under -d, a dirty hive without its transaction logs with --ca false, a hive that can't be saved); damaged hives are reported and exit 0 (it was always 0)
 - Folders under -d that can't be read are reported ("Unable to read folder &lt;path&gt;: &lt;reason&gt;") and the rest is still processed; they were skipped silently
+- **RECmd**: uses RegistryPluginBase 2026.10.6 and ExtensionBlocks 2026.10.8: the LastVisitedPidlMRU, OpenSavePidlMRU, RecentDocs and Taskband plugins read 0x2E root folder items with extension blocks and zip contents with data in bytes 4-9 (see ExtensionBlocks above) (2026.10.1)
 
 ### ⌨️ RecentFileCacheParser
 
@@ -410,6 +422,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Its plugins and shell items read the same new shell items as RECmd's plugins (ExtensionBlocks 2026.10.7, GuidMapping 2026.10.2, RegistryPluginBase 2026.10.4)
 - The hex views (value hex viewer and Technical details) use the same hex control as the other GUIs (EZ.Hexbox): bytes per line follow the window width in steps of 8 (8, 16, 24...) instead of any count (13, 23...), so the line offsets are round (0x...0/0x...8)
 - Error reports and logged exceptions include source file and line numbers, also in plugins
+- Uses RegistryPluginBase 2026.10.6 and ExtensionBlocks 2026.10.8: the shell items in the LastVisitedPidlMRU, OpenSavePidlMRU, RecentDocs and Taskband plugins (see ExtensionBlocks above) (2026.10.1)
 
 ### ⌨️ SBECmd
 
@@ -436,6 +449,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - A hive in use that is read raw and has no BagMRU key is a warning, as when it is read normally; it was counted as a hive that could not be processed
 - Folders under -d that can't be read are reported ("Unable to read folder &lt;path&gt;: &lt;reason&gt;") and the rest is still processed; they were skipped silently
 - A --csv or --json that names an existing file stops with a message; it crashed with an unhandled exception
+- 0x2E root folder items with extension blocks (a known folder such as Downloads) are read; they were parse errors ("Index and count must refer to a location within the buffer"). Zip contents with data in bytes 4-9 are read (they were unknown types). ExtensionBlocks 2026.10.8, see above (2026.10.1)
 
 ### 🖥️ SDB Explorer
 
@@ -486,6 +500,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Reads the same new shell items as SBECmd (Windows 11 archive folders, document drive items, 0x3D folders, OneDrive and Creative Cloud Files GUIDs named)
 - The Details window shows "Last interacted" for wrapper items (0x35, 0x36, 0x39, 0xB1, 0xB5) at MRU position 0, as the grid column already did; 0x36 items show Shell Type File in the grid and the details
 - Error reports and logged exceptions include source file and line numbers
+- Same shell item fixes as SBECmd: 0x2E root folder items with extension blocks and zip contents with data in bytes 4-9 (ExtensionBlocks 2026.10.8) (2026.10.1)
 
 ### ⌨️ SQLECmd
 
