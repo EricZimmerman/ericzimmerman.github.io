@@ -43,7 +43,7 @@ hide:
 | ⌨️&nbsp;JLECmd | [2026.10.3](https://download.ericzimmermanstools.com/JLECmd.zip) &vert; [2026.10.3](https://download.ericzimmermanstools.com/net/JLECmd.zip) | Jump List parser
 | 🖥️&nbsp;JumpList Explorer | - &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/JumpListExplorer.zip) | GUI based Jump List viewer
 | ⌨️&nbsp;LECmd | [2026.10.2](https://download.ericzimmermanstools.com/LECmd.zip) &vert; [2026.10.2](https://download.ericzimmermanstools.com/net/LECmd.zip) | Parse lnk files
-| ⌨️&nbsp;MFTECmd | [2026.10.2](https://download.ericzimmermanstools.com/MFTECmd.zip) &vert; [2026.10.2](https://download.ericzimmermanstools.com/net/MFTECmd.zip) | $MFT, $Boot, $J, $SDS, $I30, and $LogFile parser. Handles locked files
+| ⌨️&nbsp;MFTECmd | [2026.10.4](https://download.ericzimmermanstools.com/MFTECmd.zip) &vert; [2026.10.4](https://download.ericzimmermanstools.com/net/MFTECmd.zip) | $MFT, $Boot, $J, $SDS, $I30, and $LogFile parser. Handles locked files
 | 🖥️&nbsp;MFTExplorer | - &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/MFTExplorer.zip) | Graphical $MFT viewer
 | ⌨️&nbsp;PECmd | [2026.10.2](https://download.ericzimmermanstools.com/PECmd.zip) &vert; [2026.10.2](https://download.ericzimmermanstools.com/net/PECmd.zip) | Prefetch parser
 | ⌨️&nbsp;RBCmd | [2026.10.0](https://download.ericzimmermanstools.com/RBCmd.zip) &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/RBCmd.zip) | Recycle Bin artifact (INFO2/$I) parser
