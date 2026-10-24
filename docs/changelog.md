@@ -19,7 +19,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 | Program | Version | Program | Version | Program | Version |
 |--|--|--|--|--|--|
 | AmcacheParser | 2026.10.0 | LECmd | 2026.10.2 | SDB Explorer | 2026.10.0 |
-| AppCompatCacheParser | 2026.10.0 | MFTECmd | 2026.10.3 | ShellBags Explorer | 2026.10.1 |
+| AppCompatCacheParser | 2026.10.0 | MFTECmd | 2026.10.4 | ShellBags Explorer | 2026.10.1 |
 | bstrings | 2026.10.0 | PECmd | 2026.10.2 | SQLECmd | 2026.10.1 |
 | EvtxECmd | 2026.10.1 | RBCmd | 2026.10.0 | SrumECmd | 2026.10.0 |
 | EZViewer | 2026.10.0 | RECmd | 2026.10.1 | SumECmd | 2026.10.0 |
@@ -321,6 +321,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - JSON output replaces an existing file instead of leaving old data at its end
 - Error reports and logged exceptions include source file and line numbers
 - Exit code 1 when the tool fails (invalid arguments, a missing file, a file it can't read, output that can't be written); damaged, empty or unknown files are reported and exit 0 (it was always 0)
+- Warnings about invalid timestamps say where they are: the attribute ($STANDARD\_INFORMATION, $FILE\_NAME, index entry), the FILE record (entry-sequence) and its offset, or the $I30 offset or $LogFile LSN, with the raw value (MFT #22); they said only "Enable --debug for record information" (2026.10.4)
 
 ### ⌨️ PECmd
 
