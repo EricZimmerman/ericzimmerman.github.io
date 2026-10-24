@@ -19,7 +19,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 | Program | Version | Program | Version | Program | Version |
 |--|--|--|--|--|--|
 | AmcacheParser | 2026.10.0 | LECmd | 2026.10.2 | SDB Explorer | 2026.10.0 |
-| AppCompatCacheParser | 2026.10.0 | MFTECmd | 2026.10.2 | ShellBags Explorer | 2026.10.1 |
+| AppCompatCacheParser | 2026.10.0 | MFTECmd | 2026.10.3 | ShellBags Explorer | 2026.10.1 |
 | bstrings | 2026.10.0 | PECmd | 2026.10.2 | SQLECmd | 2026.10.1 |
 | EvtxECmd | 2026.10.1 | RBCmd | 2026.10.0 | SrumECmd | 2026.10.0 |
 | EZViewer | 2026.10.0 | RECmd | 2026.10.1 | SumECmd | 2026.10.0 |
@@ -308,6 +308,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - $MFTs over 2 GB are supported
 - Resident attribute lists are read (thousands of records per $MFT had empty attribute lists)
 - Deleted records keep their attributes past the used size (more $DATA runs and names recovered)
+- The $MFT CSV only has the ResidentDataBase64, ResidentDataHex and ResidentDataASCII columns with --ir (#58); without it they were always there and always empty
 - One damaged record no longer ends the whole $MFT; fixed hangs on damaged records and directories that are each other's parent
 - Fix NTFS 3.0 (Windows 2000) record entry numbers; fix 48 bit entry numbers (upper bits were multiplied by 2^24)
 - $SDS: one row per security id (every entry was output twice), with a FromMirror column for mirror copies that differ
@@ -578,6 +579,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - BrowsingHistoryView: Visit Time is shown as written in the file (local time of the machine it ran on, or UTC with /ShowTimeInGMT 1); it was converted again with the analyst's time zone (Issues #241)
 - Files load in the background: the window stays responsive while a large file loads, and files opened or dropped meanwhile load after it
 - Details pane (View \| Details pane): the selected row's fields and values, one per line, beside the grid (Issues #248)
+- MFTECmd's $MFT CSV without --ir (2026.10.3 and later, no resident data columns) opens with its plugin and layout
 - Copy (Ctrl+C) and Apply value as filter (Ctrl+Shift+F) work in the details pane too: copy a value or several lines from it, or filter the grid on a field's value (Issues #250)
 - Global format rules (Tools \| Global format rules): conditional formatting for every file, for example tagged rows in yellow, applied to each file that has the rule's columns (Issues #144)
 - Fixes: a default layout that failed to load was deleted; startup without a Plugins folder; search options showed each other's choice; tagging with the checkbox could record another row; the wrong tab selected after closing one; export dialogs showed no files; a folder on the command line; empty plaso descriptions; Find with an empty line; Open last closed keeps tags
