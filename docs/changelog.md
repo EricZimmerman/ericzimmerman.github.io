@@ -21,7 +21,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 | Program | Version | Program | Version | Program | Version |
 |--|--|--|--|--|--|
 | AmcacheParser | 2026.10.1 | LECmd | 2026.10.3 | SDB Explorer | 2026.10.0 |
-| AppCompatCacheParser | 2026.10.1 | MFTECmd | 2026.10.5 | ShellBags Explorer | 2026.10.1 |
+| AppCompatCacheParser | 2026.10.1 | MFTECmd | 2026.10.6 | ShellBags Explorer | 2026.10.1 |
 | bstrings | 2026.10.1 | PECmd | 2026.10.3 | SQLECmd | 2026.10.2 |
 | EvtxECmd | 2026.10.2 | RBCmd | 2026.10.1 | SrumECmd | 2026.10.1 |
 | EZViewer | 2026.10.0 | RECmd | 2026.10.2 | SumECmd | 2026.10.1 |
@@ -336,6 +336,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Warnings about invalid timestamps say where they are: the attribute ($STANDARD\_INFORMATION, $FILE\_NAME, index entry), the FILE record (entry-sequence) and its offset, or the $I30 offset or $LogFile LSN, with the raw value (MFT #22); they said only "Enable --debug for record information" (2026.10.4)
 - New --co (on by default; --co false turns it off) saves all console messages to &lt;yyyyMMddHHmmss&gt;\_MFTECmd\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the output directory (the first of --csv, --json, --body given) (Issues #259); --debug and --trace show the time of each message again (they showed the --dt date) (2026.10.5)
 - All output files of a run and the console log share one UTC time in their names (each kind of output took its own) (2026.10.5)
+- --dd on its own (exporting a FILE record) also saves the console log, next to the exported record (Issues #259) (2026.10.6)
 
 ### ⌨️ PECmd
 
