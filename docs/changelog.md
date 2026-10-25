@@ -22,12 +22,12 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 |--|--|--|--|--|--|
 | AmcacheParser | 2026.10.1 | LECmd | 2026.10.3 | SDB Explorer | 2026.10.0 |
 | AppCompatCacheParser | 2026.10.1 | MFTECmd | 2026.10.6 | ShellBags Explorer | 2026.10.1 |
-| bstrings | 2026.10.1 | PECmd | 2026.10.3 | SQLECmd | 2026.10.2 |
+| bstrings | 2026.10.1 | PECmd | 2026.10.3 | SQLECmd | 2026.10.3 |
 | EvtxECmd | 2026.10.2 | RBCmd | 2026.10.1 | SrumECmd | 2026.10.1 |
 | EZViewer | 2026.10.0 | RECmd | 2026.10.2 | SumECmd | 2026.10.1 |
 | Hasher | 2026.10.0 | rla | 2026.10.1 | VSCMount | 2026.10.0 |
 | iisGeolocate | 2026.10.1 | RecentFileCacheParser | 2026.10.2 | WxTCmd | 2026.10.1 |
-| JLECmd | 2026.10.4 | Registry Explorer | 2026.10.1 | | |
+| JLECmd | 2026.10.5 | Registry Explorer | 2026.10.1 | | |
 | JumpList Explorer | 2026.10.1 | SBECmd | 2026.10.2 | | |
 
 ### 📚 Registry
@@ -254,6 +254,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Folders under -d that can't be read are reported ("Unable to read folder &lt;path&gt;: &lt;reason&gt;") and the rest is still processed; they were skipped silently
 - Uses JumpList 2026.10.9, Lnk 2026.10.10 and ExtensionBlocks 2026.10.8: 0x2E root folder items with extension blocks and zip contents with data in bytes 4-9 are read (see ExtensionBlocks above) (2026.10.3)
 - New --co (on by default; --co false turns it off) saves all console messages to &lt;yyyyMMddHHmmss&gt;\_JLECmd\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the output directory (the first of --csv, --json, --html given) (Issues #259); --debug and --trace show the time of each message again (they showed the --dt date) (2026.10.4)
+- --dumpTo on its own also saves the console log, next to the dumped lnk files (Issues #259) (2026.10.5)
 
 ### ⌨️ LECmd
 
