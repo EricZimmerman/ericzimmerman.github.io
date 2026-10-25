@@ -34,39 +34,39 @@ hide:
 
 |Name | <span style="display: inline-block; width:150px">Version (.net 4 &vert; 10)</span> | Purpose | 
 |--|--|--
-| ⌨️&nbsp;AmcacheParser | - &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/AmcacheParser.zip) | Amcache.hve parser with lots of extra features, including the Windows 11 26H2 Amcache databases. Handles locked files
-| ⌨️&nbsp;AppCompatCacheParser | [2026.10.0](https://download.ericzimmermanstools.com/AppCompatCacheParser.zip) &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/AppCompatCacheParser.zip) | AppCompatCache aka ShimCache parser. Handles locked files
-| ⌨️&nbsp;bstrings | [2026.10.0](https://download.ericzimmermanstools.com/bstrings.zip) &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/bstrings.zip) | Find them strings yo. Built in regex patterns. Handles locked files
-| ⌨️&nbsp;EvtxECmd | [2026.10.1](https://download.ericzimmermanstools.com/EvtxECmd.zip) &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/EvtxECmd.zip) | Event log (evtx) parser with standardized CSV, XML, and json output! Custom maps, locked file support, and more!
+| ⌨️&nbsp;AmcacheParser | - &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/AmcacheParser.zip) | Amcache.hve parser with lots of extra features, including the Windows 11 26H2 Amcache databases. Handles locked files
+| ⌨️&nbsp;AppCompatCacheParser | [2026.10.1](https://download.ericzimmermanstools.com/AppCompatCacheParser.zip) &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/AppCompatCacheParser.zip) | AppCompatCache aka ShimCache parser. Handles locked files
+| ⌨️&nbsp;bstrings | [2026.10.1](https://download.ericzimmermanstools.com/bstrings.zip) &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/bstrings.zip) | Find them strings yo. Built in regex patterns. Handles locked files
+| ⌨️&nbsp;EvtxECmd | [2026.10.2](https://download.ericzimmermanstools.com/EvtxECmd.zip) &vert; [2026.10.2](https://download.ericzimmermanstools.com/net/EvtxECmd.zip) | Event log (evtx) parser with standardized CSV, XML, and json output! Custom maps, locked file support, and more!
 | 🖥️&nbsp;EZViewer | - &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/EZViewer.zip) | Standalone, zero dependency viewer for .doc, .docx, .xls, .xlsx, .txt, .log, .rtf, .otd, .htm, .html, .mht, .csv, and .pdf. Any non-supported files are shown in a hex editor (with data interpreter!)
 | 🖥️&nbsp;Hasher | - &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/hasher.zip) | Hash all the things
-| ⌨️&nbsp;JLECmd | [2026.10.3](https://download.ericzimmermanstools.com/JLECmd.zip) &vert; [2026.10.3](https://download.ericzimmermanstools.com/net/JLECmd.zip) | Jump List parser
+| ⌨️&nbsp;JLECmd | [2026.10.4](https://download.ericzimmermanstools.com/JLECmd.zip) &vert; [2026.10.4](https://download.ericzimmermanstools.com/net/JLECmd.zip) | Jump List parser
 | 🖥️&nbsp;JumpList Explorer | - &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/JumpListExplorer.zip) | GUI based Jump List viewer
-| ⌨️&nbsp;LECmd | [2026.10.2](https://download.ericzimmermanstools.com/LECmd.zip) &vert; [2026.10.2](https://download.ericzimmermanstools.com/net/LECmd.zip) | Parse lnk files
-| ⌨️&nbsp;MFTECmd | [2026.10.4](https://download.ericzimmermanstools.com/MFTECmd.zip) &vert; [2026.10.4](https://download.ericzimmermanstools.com/net/MFTECmd.zip) | $MFT, $Boot, $J, $SDS, $I30, and $LogFile parser. Handles locked files
+| ⌨️&nbsp;LECmd | [2026.10.3](https://download.ericzimmermanstools.com/LECmd.zip) &vert; [2026.10.3](https://download.ericzimmermanstools.com/net/LECmd.zip) | Parse lnk files
+| ⌨️&nbsp;MFTECmd | [2026.10.5](https://download.ericzimmermanstools.com/MFTECmd.zip) &vert; [2026.10.5](https://download.ericzimmermanstools.com/net/MFTECmd.zip) | $MFT, $Boot, $J, $SDS, $I30, and $LogFile parser. Handles locked files
 | 🖥️&nbsp;MFTExplorer | - &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/MFTExplorer.zip) | Graphical $MFT viewer
-| ⌨️&nbsp;PECmd | [2026.10.2](https://download.ericzimmermanstools.com/PECmd.zip) &vert; [2026.10.2](https://download.ericzimmermanstools.com/net/PECmd.zip) | Prefetch parser
-| ⌨️&nbsp;RBCmd | [2026.10.0](https://download.ericzimmermanstools.com/RBCmd.zip) &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/RBCmd.zip) | Recycle Bin artifact (INFO2/$I) parser
-| ⌨️&nbsp;RecentFileCacheParser | [2026.10.1](https://download.ericzimmermanstools.com/RecentFileCacheParser.zip) &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/RecentFileCacheParser.zip) | RecentFileCache parser
-| ⌨️&nbsp;RECmd | [2026.10.1](https://download.ericzimmermanstools.com/RECmd.zip) &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/RECmd.zip) | Powerful command line Registry tool searching, multi-hive support, plugins, and more
+| ⌨️&nbsp;PECmd | [2026.10.3](https://download.ericzimmermanstools.com/PECmd.zip) &vert; [2026.10.3](https://download.ericzimmermanstools.com/net/PECmd.zip) | Prefetch parser
+| ⌨️&nbsp;RBCmd | [2026.10.1](https://download.ericzimmermanstools.com/RBCmd.zip) &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/RBCmd.zip) | Recycle Bin artifact (INFO2/$I) parser
+| ⌨️&nbsp;RecentFileCacheParser | [2026.10.2](https://download.ericzimmermanstools.com/RecentFileCacheParser.zip) &vert; [2026.10.2](https://download.ericzimmermanstools.com/net/RecentFileCacheParser.zip) | RecentFileCache parser
+| ⌨️&nbsp;RECmd | [2026.10.2](https://download.ericzimmermanstools.com/RECmd.zip) &vert; [2026.10.2](https://download.ericzimmermanstools.com/net/RECmd.zip) | Powerful command line Registry tool searching, multi-hive support, plugins, and more
 | 🖥️&nbsp;Registry Explorer | - &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/RegistryExplorer.zip) | Registry viewer with searching, multi-hive support, plugins, and more. Handles locked files
-| ⌨️&nbsp;RLA | [2026.10.0](https://download.ericzimmermanstools.com/rla.zip) &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/rla.zip) | Replay transaction logs and update Registry hives so they are no longer dirty. Useful when tools do not know how to handle transaction logs
-| ⌨️&nbsp;SBECmd | [2026.10.1](https://download.ericzimmermanstools.com/SBECmd.zip) &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/SBECmd.zip) | ShellBags Explorer, command line edition, for exporting shellbag data
+| ⌨️&nbsp;RLA | [2026.10.1](https://download.ericzimmermanstools.com/rla.zip) &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/rla.zip) | Replay transaction logs and update Registry hives so they are no longer dirty. Useful when tools do not know how to handle transaction logs
+| ⌨️&nbsp;SBECmd | [2026.10.2](https://download.ericzimmermanstools.com/SBECmd.zip) &vert; [2026.10.2](https://download.ericzimmermanstools.com/net/SBECmd.zip) | ShellBags Explorer, command line edition, for exporting shellbag data
 | 🖥️&nbsp;SDB Explorer | - &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/SDBExplorer.zip) | Shim database GUI
 | 🖥️&nbsp;ShellBags Explorer | - &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/ShellBagsExplorer.zip) | GUI for browsing shellbags data. Handles locked files
-| ⌨️&nbsp;SQLECmd | - &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/SQLECmd.zip) | Find and process SQLite files according to your needs with maps!
-| ⌨️&nbsp;SrumECmd | [2026.10.0](https://download.ericzimmermanstools.com/SrumECmd.zip) &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/SrumECmd.zip) | Process SRUDB.dat and (optionally) SOFTWARE hive for network, process, and energy info!
-| ⌨️&nbsp;SumECmd | [2026.10.0](https://download.ericzimmermanstools.com/SumECmd.zip) &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/SumECmd.zip) | Process Microsoft User Access Logs found under 'C:\Windows\System32\LogFiles\SUM'
+| ⌨️&nbsp;SQLECmd | - &vert; [2026.10.2](https://download.ericzimmermanstools.com/net/SQLECmd.zip) | Find and process SQLite files according to your needs with maps!
+| ⌨️&nbsp;SrumECmd | [2026.10.1](https://download.ericzimmermanstools.com/SrumECmd.zip) &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/SrumECmd.zip) | Process SRUDB.dat and (optionally) SOFTWARE hive for network, process, and energy info!
+| ⌨️&nbsp;SumECmd | [2026.10.1](https://download.ericzimmermanstools.com/SumECmd.zip) &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/SumECmd.zip) | Process Microsoft User Access Logs found under 'C:\Windows\System32\LogFiles\SUM'
 | 🖥️&nbsp;Timeline Explorer | - &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/TimelineExplorer.zip) | View CSV and Excel files, filter, group, sort, etc. with ease
 | ⌨️&nbsp;VSCMount | - &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/VSCMount.zip) | Mount all VSCs on a drive letter to a given mount point
-| ⌨️&nbsp;WxTCmd | - &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/WxTCmd.zip) | Windows 10/11 Timeline database parser
+| ⌨️&nbsp;WxTCmd | - &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/WxTCmd.zip) | Windows 10/11 Timeline database parser
 
 ## 🧰 Other tools
 
 |Name  |<span style="display: inline-block; width:150px">Version (.net 4 &vert; 10)</span> | Purpose
 |--|--|--
 | 📜&nbsp;Get-ZimmermanTools | [NA](https://download.ericzimmermanstools.com/Get-ZimmermanTools.zip) | PowerShell script to auto discover and update everything above.
-| ⌨️&nbsp;iisGeoLocate | [2026.10.0](https://download.ericzimmermanstools.com/iisGeolocate.zip) &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/iisGeolocate.zip) | Geolocate IP addresses found in IIS logs, extracts unique IPs, records bad data from logs
+| ⌨️&nbsp;iisGeoLocate | [2026.10.1](https://download.ericzimmermanstools.com/iisGeolocate.zip) &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/iisGeolocate.zip) | Geolocate IP addresses found in IIS logs, extracts unique IPs, records bad data from logs
 | 🎒&nbsp;KAPE | [NA](https://kape.zip) | Kroll Artifact Parser/Extractor: Flexible, high speed collection of files as well as processing of files. Many many features
 | 🖥️&nbsp;TimeApp | [2026.10.0](https://download.ericzimmermanstools.com/TimeApp.zip) &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/TimeApp.zip) | Shows the current time (local and UTC) to the microsecond, a stopwatch, a countdown, a timestamp converter (Unix, FILETIME, WebKit, Cocoa, OLE) and optionally, public IP addresses. Great for testing
 | 🖥️&nbsp;XWFIM | - &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/XWFIM.zip) | X-Ways Forensics installation manager
