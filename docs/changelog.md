@@ -16,17 +16,19 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 
     All tools now target .NET 10 (LTS) instead of .NET 9 (AmcacheParser, VSCMount and WxTCmd only .NET 10), and return exit code 1 when the tool fails (invalid arguments, a missing input path, output that can't be written, files or folders it can't read) and 0 otherwise: damaged files are reported but are not a failure.
 
+    New in the October updates: --co in every command line tool except VSCMount saves all console messages, with times and levels, to &lt;yyyyMMddHHmmss&gt;\_&lt;Tool&gt;\_&lt;version&gt;\_ConsoleLog.txt in the output directory (SBECmd: on by default, replacing !SBECmd\_Messages.txt; Issues #259).
+
 | Program | Version | Program | Version | Program | Version |
 |--|--|--|--|--|--|
-| AmcacheParser | 2026.10.0 | LECmd | 2026.10.2 | SDB Explorer | 2026.10.0 |
-| AppCompatCacheParser | 2026.10.0 | MFTECmd | 2026.10.4 | ShellBags Explorer | 2026.10.1 |
-| bstrings | 2026.10.0 | PECmd | 2026.10.2 | SQLECmd | 2026.10.1 |
-| EvtxECmd | 2026.10.1 | RBCmd | 2026.10.0 | SrumECmd | 2026.10.0 |
-| EZViewer | 2026.10.0 | RECmd | 2026.10.1 | SumECmd | 2026.10.0 |
-| Hasher | 2026.10.0 | rla | 2026.10.0 | VSCMount | 2026.10.0 |
-| iisGeolocate | 2026.10.0 | RecentFileCacheParser | 2026.10.1 | WxTCmd | 2026.10.0 |
-| JLECmd | 2026.10.3 | Registry Explorer | 2026.10.1 | | |
-| JumpList Explorer | 2026.10.1 | SBECmd | 2026.10.1 | | |
+| AmcacheParser | 2026.10.1 | LECmd | 2026.10.3 | SDB Explorer | 2026.10.0 |
+| AppCompatCacheParser | 2026.10.1 | MFTECmd | 2026.10.5 | ShellBags Explorer | 2026.10.1 |
+| bstrings | 2026.10.1 | PECmd | 2026.10.3 | SQLECmd | 2026.10.2 |
+| EvtxECmd | 2026.10.2 | RBCmd | 2026.10.1 | SrumECmd | 2026.10.1 |
+| EZViewer | 2026.10.0 | RECmd | 2026.10.2 | SumECmd | 2026.10.1 |
+| Hasher | 2026.10.0 | rla | 2026.10.1 | VSCMount | 2026.10.0 |
+| iisGeolocate | 2026.10.1 | RecentFileCacheParser | 2026.10.2 | WxTCmd | 2026.10.1 |
+| JLECmd | 2026.10.4 | Registry Explorer | 2026.10.1 | | |
+| JumpList Explorer | 2026.10.1 | SBECmd | 2026.10.2 | | |
 
 ### 📚 Registry
 
@@ -79,6 +81,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - New --temp: the temporary copies of the Inventory\*.db databases go to a Temp folder next to AmcacheParser (or the folder given with --temp) instead of the user's %TEMP%; if it can't be written to, AmcacheParser stops and asks for --temp
 - Error reports and logged exceptions include source file and line numbers
 - Exit code 1 when the tool fails (invalid arguments, a missing input path, a hive or database it can't access or read, output or a --temp folder that can't be written, a dirty hive without its transaction logs); damaged hives and databases, and entries that could not be parsed, are reported and exit 0 (it was always 0)
+- New --co saves all console messages to &lt;yyyyMMddHHmmss&gt;\_AmcacheParser\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the --csv directory (Issues #259); --debug and --trace show the time of each message again (they showed the --dt date) (2026.10.1)
 
 ### ⌨️ AppCompatCacheParser
 
@@ -95,6 +98,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Uses Registry 2026.10.0 (see Registry above): transaction logs replayed as Windows does, damaged hives that would not open (such as one in the test set) are read
 - Error reports and logged exceptions include source file and line numbers
 - Exit code 1 when the tool fails (invalid arguments or a -c ControlSet that doesn't exist, a missing input file, a hive it can't access or read, a dirty hive without its transaction logs, a CSV that can't be written); damaged hives and cache entries are reported and exit 0, as does a hive without a cache (it was always 0)
+- New --co saves all console messages to &lt;yyyyMMddHHmmss&gt;\_AppCompatCacheParser\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the --csv directory (Issues #259) (2026.10.1)
 
 ### ⌨️ bstrings
 
@@ -111,6 +115,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Error reports and logged exceptions include source file and line numbers
 - Exit code 1 when the tool fails (invalid arguments, a missing input path, a file or a folder under -d it can't read, an -o file that can't be written); any file content gives 0 (it was always 0)
 - Folders under -d that can't be read are reported ("Unable to read folder &lt;path&gt;: &lt;reason&gt;") and the rest is still processed; they were skipped silently
+- New --co saves all console messages to &lt;yyyyMMddHHmmss&gt;\_bstrings\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the folder of the -o file (Issues #259) (2026.10.1)
 
 ### ⌨️ EvtxECmd
 
@@ -134,6 +139,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Exit code 1 when the tool fails (invalid arguments, a missing input path, output that can't be written, event logs or folders it can't open or read); damaged event logs and files that aren't event logs are reported and exit 0 (it was always 0)
 - An in-use event log whose raw read fails is reported and skipped; it stopped the run
 - Folders under -d that can't be read are reported ("Unable to read folder &lt;path&gt;: &lt;reason&gt;") and the rest is still processed; they were skipped silently
+- New --co saves all console messages to &lt;yyyyMMddHHmmss&gt;\_EvtxECmd\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the output directory (the first of --csv, --json, --xml given) (Issues #259); --debug and --trace show the time of each message again (they showed the --dt date) (2026.10.2)
 
 ### 🖥️ EZViewer
 
@@ -197,6 +203,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Error reports and logged exceptions include source file and line numbers
 - Exit code 1 when the tool fails (invalid arguments, a missing folder, no usable database, output that can't be written, logs or folders it can't read); damaged logs are still listed under Failed files and exit 0 (it was always 0, even after a crash)
 - Folders under -d that can't be read are reported ("Unable to read folder &lt;path&gt;: &lt;reason&gt;") and the rest is still processed; they were skipped silently (the .NET 10 build)
+- New --co saves all console messages to &lt;yyyyMMddHHmmss&gt;\_iisGeolocate\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the --csv directory (Issues #259) (2026.10.1)
 
 ### 🖥️ JumpList Explorer
 
@@ -244,6 +251,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Exit code 1 when the tool fails (invalid arguments, a missing input path, output that can't be written, jump lists or folders under -d it can't read); damaged jump lists are reported and exit 0 (it was always 0)
 - Folders under -d that can't be read are reported ("Unable to read folder &lt;path&gt;: &lt;reason&gt;") and the rest is still processed; they were skipped silently
 - Uses JumpList 2026.10.9, Lnk 2026.10.10 and ExtensionBlocks 2026.10.8: 0x2E root folder items with extension blocks and zip contents with data in bytes 4-9 are read (see ExtensionBlocks above) (2026.10.3)
+- New --co saves all console messages to &lt;yyyyMMddHHmmss&gt;\_JLECmd\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the output directory (the first of --csv, --json, --html given) (Issues #259); --debug and --trace show the time of each message again (they showed the --dt date) (2026.10.4)
 
 ### ⌨️ LECmd
 
@@ -271,6 +279,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Exit code 1 when the tool fails (invalid arguments, a missing input path, output that can't be written, lnk files or folders under -d it can't read); damaged lnk files are reported and exit 0 (it was always 0)
 - Folders under -d that can't be read are reported ("Unable to read folder &lt;path&gt;: &lt;reason&gt;") and the rest is still processed; they were skipped silently
 - Uses Lnk 2026.10.10 and ExtensionBlocks 2026.10.8: 0x2E root folder items with extension blocks and zip contents with data in bytes 4-9 are read (see ExtensionBlocks above) (2026.10.2)
+- New --co saves all console messages to &lt;yyyyMMddHHmmss&gt;\_LECmd\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the output directory (the first of --csv, --json, --xml, --html given) (Issues #259); --debug and --trace show the time of each message again (they showed the --dt date) (2026.10.3)
 
 ### 🖥️ MFT Explorer
 
@@ -322,6 +331,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Error reports and logged exceptions include source file and line numbers
 - Exit code 1 when the tool fails (invalid arguments, a missing file, a file it can't read, output that can't be written); damaged, empty or unknown files are reported and exit 0 (it was always 0)
 - Warnings about invalid timestamps say where they are: the attribute ($STANDARD\_INFORMATION, $FILE\_NAME, index entry), the FILE record (entry-sequence) and its offset, or the $I30 offset or $LogFile LSN, with the raw value (MFT #22); they said only "Enable --debug for record information" (2026.10.4)
+- New --co saves all console messages to &lt;yyyyMMddHHmmss&gt;\_MFTECmd\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the output directory (the first of --csv, --json, --body given) (Issues #259); --debug and --trace show the time of each message again (they showed the --dt date) (2026.10.5)
 
 ### ⌨️ PECmd
 
@@ -340,6 +350,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Exit code 1 when the tool fails (invalid arguments, a missing input path, output that can't be written, files or folders it can't read, including folders under -d that can't be read, VSC folders that can't be fully listed and folders or streams that can't be opened during --ads); damaged files are reported and exit 0 (it was always 0)
 - Folders under -d that can't be read are reported ("Unable to read folder &lt;path&gt;: &lt;reason&gt;") and the rest is still processed; they were skipped silently
 - -d --dedupe with a file that can't be read (for example locked by another process) reports it and goes on; it stopped the run with an unhandled exception
+- New --co saves all console messages to &lt;yyyyMMddHHmmss&gt;\_PECmd\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the output directory (the first of --csv, --json, --html given) (Issues #259); --debug and --trace show the time of each message again (they showed the --dt date) (2026.10.3)
 
 ### ⌨️ RBCmd
 
@@ -352,6 +363,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Exit code 1 when the tool fails (invalid arguments, a missing input path, output that can't be written, files or folders it can't read); damaged $I and INFO2 files are still listed under Failed files and exit 0 (it was always 0)
 - A $I or INFO2 file that can't be read (for example locked by another process) is reported as "Unable to read" instead of asking for the file to be sent in
 - Folders under -d that can't be read are reported ("Unable to read folder &lt;path&gt;: &lt;reason&gt;") and the rest is still processed; they were skipped silently (the .NET Framework build logs them)
+- New --co saves all console messages to &lt;yyyyMMddHHmmss&gt;\_RBCmd\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the --csv directory (Issues #259); --debug and --trace show the time of each message again (they showed the --dt date) (2026.10.1)
 
 ### ⌨️ RECmd and rla
 
@@ -393,6 +405,8 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - **rla**: Exit code 1 when the tool fails (invalid arguments, a missing input path, a hive or folder it can't read, including subfolders under -d, a dirty hive without its transaction logs with --ca false, a hive that can't be saved); damaged hives are reported and exit 0 (it was always 0)
 - Folders under -d that can't be read are reported ("Unable to read folder &lt;path&gt;: &lt;reason&gt;") and the rest is still processed; they were skipped silently
 - **RECmd**: uses RegistryPluginBase 2026.10.6 and ExtensionBlocks 2026.10.8: the LastVisitedPidlMRU, OpenSavePidlMRU, RecentDocs and Taskband plugins read 0x2E root folder items with extension blocks and zip contents with data in bytes 4-9 (see ExtensionBlocks above) (2026.10.1)
+- **RECmd**: New --co saves all console messages to &lt;yyyyMMddHHmmss&gt;\_RECmd\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the output directory (the first of --csv, --json given, else the folder of the --saveTo file) (Issues #259); --debug and --trace show the time of each message again (they showed the --dt date) (2026.10.2)
+- **rla**: New --co saves all console messages to &lt;yyyyMMddHHmmss&gt;\_rla\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the --out directory (Issues #259) (2026.10.1)
 
 ### ⌨️ RecentFileCacheParser
 
@@ -403,6 +417,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Error reports and logged exceptions include source file and line numbers
 - Exit code 1 when the tool fails (a missing -f or input file, a file it can't read, a CSV or JSON export that can't be written); a damaged file, or a file that isn't a RecentFileCache.bcf, is reported and exits 0 (it was always 0)
 - A file that can't be read (for example locked by another process) is reported as "Unable to read" instead of asking for the file to be sent in
+- New --co saves all console messages to &lt;yyyyMMddHHmmss&gt;\_RecentFileCacheParser\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the output directory (the first of --csv, --json given) (Issues #259) (2026.10.2)
 
 ### 🖥️ Registry Explorer
 
@@ -452,6 +467,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Folders under -d that can't be read are reported ("Unable to read folder &lt;path&gt;: &lt;reason&gt;") and the rest is still processed; they were skipped silently
 - A --csv or --json that names an existing file stops with a message; it crashed with an unhandled exception
 - 0x2E root folder items with extension blocks (a known folder such as Downloads) are read; they were parse errors ("Index and count must refer to a location within the buffer"). Zip contents with data in bytes 4-9 are read (they were unknown types). ExtensionBlocks 2026.10.8, see above (2026.10.1)
+- The console messages are saved to &lt;yyyyMMddHHmmss&gt;\_SBECmd\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the --csv directory, else the --json one, a new file per run, instead of being added to !SBECmd\_Messages.txt; --co is on by default, --co false turns it off (Issues #259) (2026.10.2)
 
 ### 🖥️ SDB Explorer
 
@@ -523,6 +539,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - A --json file that can't be created stops with a message; it crashed with an unhandled exception
 - A -d folder that doesn't exist exits 1 with a message; it crashed with an unhandled exception
 - -d no longer logs "&lt;folder&gt; not found!" for every subfolder
+- New --co saves all console messages to &lt;yyyyMMddHHmmss&gt;\_SQLECmd\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the output directory (the first of --csv, --json given) (Issues #259); --debug and --trace show the time of each message again (they showed the --dt date) (2026.10.2)
 
 ### ⌨️ SrumECmd
 
@@ -536,6 +553,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Error reports and logged exceptions include source file and line numbers
 - Exit code 1 when the tool fails (invalid arguments, a missing input path, output that can't be written, a database, a -r SOFTWARE hive or folders it can't read); a damaged database or SOFTWARE hive is reported and exits 0, and a -d folder without SRUDB.dat exits 0 (it was always 0)
 - Folders under -d that can't be read are reported ("Unable to read folder &lt;path&gt;: &lt;reason&gt;") and the rest is still processed; they were skipped silently (the .NET 10 build)
+- New --co saves all console messages to &lt;yyyyMMddHHmmss&gt;\_SrumECmd\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the --csv directory (Issues #259) (2026.10.1)
 
 ### ⌨️ SumECmd
 
@@ -548,6 +566,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - New --temp: the temporary copies of the UAL databases and their transaction logs go to a Temp folder next to SumECmd (or the folder given with --temp) instead of the user's %TEMP%; if it can't be written to, SumECmd stops and asks for --temp
 - Error reports and logged exceptions include source file and line numbers
 - Exit code 1 when the tool fails (invalid arguments, a missing -d folder, output that can't be written, a database it can't read); databases that are damaged or missing are reported and exit 0 (it was always 0)
+- New --co saves all console messages to &lt;yyyyMMddHHmmss&gt;\_SumECmd\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the --csv directory (Issues #259) (2026.10.1)
 
 ### 🖥️ TimeApp
 
@@ -630,6 +649,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - New --temp: the temporary copy of ActivitiesCache.db goes to a Temp folder next to WxTCmd (or the folder given with --temp) instead of the user's %TEMP%; if it can't be written to, WxTCmd stops and asks for --temp
 - Error reports and logged exceptions include source file and line numbers
 - Exit code 1 when the tool fails (invalid arguments, a missing input file, a database it can't read, CSVs that can't be written); damaged databases and files that aren't timeline databases are reported and exit 0 (it was always 0)
+- New --co saves all console messages to &lt;yyyyMMddHHmmss&gt;\_WxTCmd\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the --csv directory (Issues #259); --debug and --trace show the time of each message again (they showed the --dt date) (2026.10.1)
 
 ### 🖥️ XWFIM
 
