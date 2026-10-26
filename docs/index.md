@@ -69,7 +69,7 @@ hide:
 | ⌨️&nbsp;iisGeoLocate | [2026.10.1](https://download.ericzimmermanstools.com/iisGeolocate.zip) &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/iisGeolocate.zip) | Geolocate IP addresses found in IIS logs, extracts unique IPs, records bad data from logs
 | 🎒&nbsp;KAPE | [NA](https://kape.zip) | Kroll Artifact Parser/Extractor: Flexible, high speed collection of files as well as processing of files. Many many features
 | 🖥️&nbsp;TimeApp | [2026.10.0](https://download.ericzimmermanstools.com/TimeApp.zip) &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/TimeApp.zip) | Shows the current time (local and UTC) to the microsecond, a stopwatch, a countdown, a timestamp converter (Unix, FILETIME, WebKit, Cocoa, OLE) and optionally, public IP addresses. Great for testing
-| 🖥️&nbsp;XWFIM | - &vert; [2026.10.0](https://download.ericzimmermanstools.com/net/XWFIM.zip) | X-Ways Forensics installation manager
+| 🖥️&nbsp;XWFIM | - &vert; [2026.10.1](https://download.ericzimmermanstools.com/net/XWFIM.zip) | X-Ways Forensics installation manager
 
 ## 📄 Other files
 
