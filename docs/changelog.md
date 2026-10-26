@@ -27,7 +27,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 | EZViewer | 2026.10.0 | RECmd | 2026.10.2 | SumECmd | 2026.10.1 |
 | Hasher | 2026.10.0 | rla | 2026.10.1 | VSCMount | 2026.10.0 |
 | iisGeolocate | 2026.10.1 | RecentFileCacheParser | 2026.10.2 | WxTCmd | 2026.10.1 |
-| JLECmd | 2026.10.5 | Registry Explorer | 2026.10.1 | | |
+| JLECmd | 2026.10.5 | Registry Explorer | 2026.10.1 | XWFIM | 2026.10.1 |
 | JumpList Explorer | 2026.10.1 | SBECmd | 2026.10.2 | | |
 
 ### 📚 Registry
@@ -677,6 +677,8 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Create portable shows its own progress bar and a Cancel button in place of Windows' copy dialog. The window stays responsive during the copy, Notepad++ extraction and WinHex.cfg update
 - A failed or canceled download no longer leaves a `.part` file in Temp
 - Error reports and logged exceptions include source file and line numbers
+- BYOD downloads work again (testing credentials and installing failed with 401 Unauthorized): x-ways.net now redirects them to x-ways.com, and the credentials weren't sent after that redirect. Investigator and Imager use x-ways.com too, and the credentials go to both X-Ways sites (2026.10.1)
+- Credentials window: the OK button no longer runs into the status bar, and the status bar text is shorter (2026.10.1)
 
 ## 🗂️ Earlier changes
 
