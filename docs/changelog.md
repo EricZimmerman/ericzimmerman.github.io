@@ -65,6 +65,9 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - A root folder item of type 0x2E with extension blocks after its GUID (a known folder such as Downloads, with 0x48 at offset 3) is read with its folder name and times; it failed with "Index and count must refer to a location within the buffer" (2026.10.8)
 - Zip contents items with data in bytes 4-9 are read (they were unknown items of types such as 0x6C, 0x7F and 0x8A) (2026.10.8)
 - Checked against every item of the ShellBags test corpus (68,598 shell items) and every shell item of the LNK and jump list test files (169,919, unchanged)
+- FTP folders are read whatever bytes 2-5 hold (they were unknown items, or misread by the class for their type byte: names in Korean as mojibake, a GUID made of the name), and their Unicode name is read in full; find data items (seen with OneDrive folders) are read. 280 of the 299 unknown items in the ShellBags test corpus are read now, and none fails (2026.10.9)
+- FTP shares opened in a file dialog (Issues #261): the URI item (0x61) of ComDlg32's MRUs no longer fails with "Index was out of range", and the FTP file after it is read with its name, size and time (it was a garbled server name such as 쀀杄ǋل潲潢獴琮瑸robots.txt) (2026.10.9)
+- 0x78 and 0x79 property view items that end with their GUIDs are read; they failed with "Unable to read beyond the end of the stream" (2026.10.9)
 
 ### ⌨️ AmcacheParser
 
@@ -407,6 +410,13 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - **RECmd plugins**: DsrmAdminLogonBehaviour finds the value: its key path is ControlSet00\*\\Control\\Lsa (it was System\\CurrentControlSet\\Control\\Lsa, which no hive has) and its value DsrmAdminLogonBehavior (it looked for DsrmAdminLogonBehaviour); the British spelling is still accepted
 - **RECmd plugins**: Use RegistryPluginBase 2026.10.4 (ExtensionBlocks 2026.10.7, GuidMapping 2026.10.2): the plugins with shell items (LastVisitedPidlMRU, OpenSavePidlMRU, Taskband) read folders inside archives (Windows 11), document drive items and 0x3D folders; OneDrive and Creative Cloud Files GUIDs are named
 - **RECmd plugins**: Error reports and logged exceptions include source file and line numbers
+- **RECmd plugins**: Use RegistryPluginBase with ExtensionBlocks 2026.10.9: LastVisitedPidlMRU and OpenSavePidlMRU read FTP shares opened in a file dialog (Issues #261: Internet Folder\\cygwin.mirror.rafal.ca\\robots.txt, not an error and a garbled name) and 0x78 items that ended in an error (next release)
+- **RECmd plugins**: Every plugin was run on every key of every test hive, old against new, and no key or value is lost to one bad value any more (errors over the test hives: 73 → 8, all damaged data) (next release):
+    - OfficeMRU: Office 2010's File MRU and Place MRU keys are listed (their Max Display value ended the key with an error; 293 more entries)
+    - Adobe: Acrobat Reader 5.0 to 11.0 recent files are listed (every one was an error; they have no date)
+    - TaskCache: Windows 7 tasks are listed (the whole key was an error); RECmd's batch output has their key path and value name (they were empty)
+    - RecentDocs, CIDSizeMRU, TypedURLs, LastVisitedPidlMRU, OpenSavePidlMRU: values that aren't in MRUListEx, settings such as CachePrefix, keys recovered without a parent and MRU values cut short no longer stop the key; a bad value is an error for that value only
+    - Taskband: an item size of 0 can no longer hang the plugin
 - Exit code 1 when the tool fails (invalid arguments or batch file, a missing input path, a hive or folder it can't read, including subfolders under -d, a dirty hive without its transaction logs when --nl isn't given, output that can't be written, a plugin that throws or can't be loaded in batch mode); damaged hives are reported and exit 0 (it was always 0)
 - **rla**: Exit code 1 when the tool fails (invalid arguments, a missing input path, a hive or folder it can't read, including subfolders under -d, a dirty hive without its transaction logs with --ca false, a hive that can't be saved); damaged hives are reported and exit 0 (it was always 0)
 - Folders under -d that can't be read are reported ("Unable to read folder &lt;path&gt;: &lt;reason&gt;") and the rest is still processed; they were skipped silently
@@ -446,6 +456,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - The hex views (value hex viewer and Technical details) use the same hex control as the other GUIs (EZ.Hexbox): bytes per line follow the window width in steps of 8 (8, 16, 24...) instead of any count (13, 23...), so the line offsets are round (0x...0/0x...8)
 - Error reports and logged exceptions include source file and line numbers, also in plugins
 - Uses RegistryPluginBase 2026.10.6 and ExtensionBlocks 2026.10.8: the shell items in the LastVisitedPidlMRU, OpenSavePidlMRU, RecentDocs and Taskband plugins (see ExtensionBlocks above) (2026.10.1)
+- Its plugins get the RECmd plugin fixes (see RECmd and rla above): FTP shares in OpenSavePidlMRU and LastVisitedPidlMRU (Issues #261), Office 2010 MRUs, old Acrobat Reader recent files, Windows 7 TaskCache tasks, and no key lost to one bad value; ExtensionBlocks 2026.10.9 (next release)
 
 ### ⌨️ SBECmd
 
@@ -473,6 +484,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Folders under -d that can't be read are reported ("Unable to read folder &lt;path&gt;: &lt;reason&gt;") and the rest is still processed; they were skipped silently
 - A --csv or --json that names an existing file stops with a message; it crashed with an unhandled exception
 - 0x2E root folder items with extension blocks (a known folder such as Downloads) are read; they were parse errors ("Index and count must refer to a location within the buffer"). Zip contents with data in bytes 4-9 are read (they were unknown types). ExtensionBlocks 2026.10.8, see above (2026.10.1)
+- FTP folders whose bytes 2-5 aren't 0 and find data items (OneDrive folders) are read: 280 of the 299 unknown items in the ShellBags test corpus parse now. ExtensionBlocks 2026.10.9, see above (next release)
 - The console messages are saved to &lt;yyyyMMddHHmmss&gt;\_SBECmd\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the --csv directory, else the --json one, a new file per run, instead of being added to !SBECmd\_Messages.txt; --co is on by default, --co false turns it off (Issues #259) (2026.10.2)
 
 ### 🖥️ SDB Explorer
@@ -525,6 +537,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - The Details window shows "Last interacted" for wrapper items (0x35, 0x36, 0x39, 0xB1, 0xB5) at MRU position 0, as the grid column already did; 0x36 items show Shell Type File in the grid and the details
 - Error reports and logged exceptions include source file and line numbers
 - Same shell item fixes as SBECmd: 0x2E root folder items with extension blocks and zip contents with data in bytes 4-9 (ExtensionBlocks 2026.10.8) (2026.10.1)
+- Same shell item fixes as SBECmd: FTP folders and find data items are read, and FTP URI items from file dialogs no longer fail (ExtensionBlocks 2026.10.9) (next release)
 
 ### ⌨️ SQLECmd
 
