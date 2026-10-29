@@ -20,15 +20,15 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 
 | Program | Version | Program | Version | Program | Version |
 |--|--|--|--|--|--|
-| AmcacheParser | 2026.10.1 | LECmd | 2026.10.3 | SDB Explorer | 2026.10.0 |
-| AppCompatCacheParser | 2026.10.1 | MFTECmd | 2026.10.6 | ShellBags Explorer | 2026.10.1 |
+| AmcacheParser | 2026.10.1 | LECmd | 2026.10.4 | SDB Explorer | 2026.10.0 |
+| AppCompatCacheParser | 2026.10.1 | MFTECmd | 2026.10.6 | ShellBags Explorer | 2026.10.2 |
 | bstrings | 2026.10.1 | PECmd | 2026.10.3 | SQLECmd | 2026.10.3 |
 | EvtxECmd | 2026.10.2 | RBCmd | 2026.10.1 | SrumECmd | 2026.10.1 |
-| EZViewer | 2026.10.0 | RECmd | 2026.10.2 | SumECmd | 2026.10.1 |
+| EZViewer | 2026.10.0 | RECmd | 2026.10.3 | SumECmd | 2026.10.1 |
 | Hasher | 2026.10.0 | rla | 2026.10.1 | VSCMount | 2026.10.0 |
 | iisGeolocate | 2026.10.1 | RecentFileCacheParser | 2026.10.2 | WxTCmd | 2026.10.1 |
-| JLECmd | 2026.10.5 | Registry Explorer | 2026.10.1 | XWFIM | 2026.10.1 |
-| JumpList Explorer | 2026.10.1 | SBECmd | 2026.10.2 | | |
+| JLECmd | 2026.10.6 | Registry Explorer | 2026.10.2 | XWFIM | 2026.10.1 |
+| JumpList Explorer | 2026.10.2 | SBECmd | 2026.10.3 | | |
 
 ### 📚 Registry
 
@@ -233,6 +233,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Reads the same new shell items as JLECmd (Windows 11 archive folders, document drive items, 0x3D folders, OneDrive and Creative Cloud Files GUIDs named)
 - Error reports and logged exceptions include source file and line numbers
 - Uses JumpList 2026.10.9, Lnk 2026.10.10 and ExtensionBlocks 2026.10.8 (see ExtensionBlocks above) (2026.10.1)
+- Uses JumpList 2026.10.10, Lnk 2026.10.11 and ExtensionBlocks 2026.10.9: FTP folders and files, find data items (OneDrive folders), URI items that end with their scheme and 0x78/0x79 property views that end with their GUIDs are read in target ID lists (see ExtensionBlocks above; the test jump lists read the same) (2026.10.2)
 
 ### ⌨️ JLECmd
 
@@ -256,6 +257,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Exit code 1 when the tool fails (invalid arguments, a missing input path, output that can't be written, jump lists or folders under -d it can't read); damaged jump lists are reported and exit 0 (it was always 0)
 - Folders under -d that can't be read are reported ("Unable to read folder &lt;path&gt;: &lt;reason&gt;") and the rest is still processed; they were skipped silently
 - Uses JumpList 2026.10.9, Lnk 2026.10.10 and ExtensionBlocks 2026.10.8: 0x2E root folder items with extension blocks and zip contents with data in bytes 4-9 are read (see ExtensionBlocks above) (2026.10.3)
+- Uses JumpList 2026.10.10, Lnk 2026.10.11 and ExtensionBlocks 2026.10.9: FTP folders and files, find data items (OneDrive folders), URI items that end with their scheme and 0x78/0x79 property views that end with their GUIDs are read in target ID lists (see ExtensionBlocks above; the test jump lists read the same) (2026.10.6)
 - New --co (on by default; --co false turns it off) saves all console messages to &lt;yyyyMMddHHmmss&gt;\_JLECmd\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the output directory (the first of --csv, --json, --html given) (Issues #259); --debug and --trace show the time of each message again (they showed the --dt date) (2026.10.4)
 - --dumpTo on its own also saves the console log, next to the dumped lnk files (Issues #259) (2026.10.5)
 
@@ -285,6 +287,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Exit code 1 when the tool fails (invalid arguments, a missing input path, output that can't be written, lnk files or folders under -d it can't read); damaged lnk files are reported and exit 0 (it was always 0)
 - Folders under -d that can't be read are reported ("Unable to read folder &lt;path&gt;: &lt;reason&gt;") and the rest is still processed; they were skipped silently
 - Uses Lnk 2026.10.10 and ExtensionBlocks 2026.10.8: 0x2E root folder items with extension blocks and zip contents with data in bytes 4-9 are read (see ExtensionBlocks above) (2026.10.2)
+- Uses Lnk 2026.10.11 and ExtensionBlocks 2026.10.9: FTP folders and files, find data items (OneDrive folders), URI items that end with their scheme and 0x78/0x79 property views that end with their GUIDs are read in target ID lists (see ExtensionBlocks above; the test shortcuts read the same) (2026.10.4)
 - New --co (on by default; --co false turns it off) saves all console messages to &lt;yyyyMMddHHmmss&gt;\_LECmd\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the output directory (the first of --csv, --json, --xml, --html given) (Issues #259); --debug and --trace show the time of each message again (they showed the --dt date) (2026.10.3)
 - --xml files of a run share its UTC time in their names, like the other outputs (each file took its own) (2026.10.3)
 
@@ -410,8 +413,8 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - **RECmd plugins**: DsrmAdminLogonBehaviour finds the value: its key path is ControlSet00\*\\Control\\Lsa (it was System\\CurrentControlSet\\Control\\Lsa, which no hive has) and its value DsrmAdminLogonBehavior (it looked for DsrmAdminLogonBehaviour); the British spelling is still accepted
 - **RECmd plugins**: Use RegistryPluginBase 2026.10.4 (ExtensionBlocks 2026.10.7, GuidMapping 2026.10.2): the plugins with shell items (LastVisitedPidlMRU, OpenSavePidlMRU, Taskband) read folders inside archives (Windows 11), document drive items and 0x3D folders; OneDrive and Creative Cloud Files GUIDs are named
 - **RECmd plugins**: Error reports and logged exceptions include source file and line numbers
-- **RECmd plugins**: Use RegistryPluginBase with ExtensionBlocks 2026.10.9: LastVisitedPidlMRU and OpenSavePidlMRU read FTP shares opened in a file dialog (Issues #261: Internet Folder\\cygwin.mirror.rafal.ca\\robots.txt, not an error and a garbled name) and 0x78 items that ended in an error (next release)
-- **RECmd plugins**: Every plugin was run on every key of every test hive, old against new, and no key or value is lost to one bad value any more (errors over the test hives: 73 → 8, all damaged data) (next release):
+- **RECmd plugins**: Use RegistryPluginBase with ExtensionBlocks 2026.10.9: LastVisitedPidlMRU and OpenSavePidlMRU read FTP shares opened in a file dialog (Issues #261: Internet Folder\\cygwin.mirror.rafal.ca\\robots.txt, not an error and a garbled name) and 0x78 items that ended in an error (RECmd 2026.10.3, Registry Explorer 2026.10.2)
+- **RECmd plugins**: Every plugin was run on every key of every test hive, old against new, and no key or value is lost to one bad value any more (errors over the test hives: 73 → 8, all damaged data) (RECmd 2026.10.3, Registry Explorer 2026.10.2):
     - OfficeMRU: Office 2010's File MRU and Place MRU keys are listed (their Max Display value ended the key with an error; 293 more entries)
     - Adobe: Acrobat Reader 5.0 to 11.0 recent files are listed (every one was an error; they have no date)
     - TaskCache: Windows 7 tasks are listed (the whole key was an error); RECmd's batch output has their key path and value name (they were empty)
@@ -456,7 +459,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - The hex views (value hex viewer and Technical details) use the same hex control as the other GUIs (EZ.Hexbox): bytes per line follow the window width in steps of 8 (8, 16, 24...) instead of any count (13, 23...), so the line offsets are round (0x...0/0x...8)
 - Error reports and logged exceptions include source file and line numbers, also in plugins
 - Uses RegistryPluginBase 2026.10.6 and ExtensionBlocks 2026.10.8: the shell items in the LastVisitedPidlMRU, OpenSavePidlMRU, RecentDocs and Taskband plugins (see ExtensionBlocks above) (2026.10.1)
-- Its plugins get the RECmd plugin fixes (see RECmd and rla above): FTP shares in OpenSavePidlMRU and LastVisitedPidlMRU (Issues #261), Office 2010 MRUs, old Acrobat Reader recent files, Windows 7 TaskCache tasks, and no key lost to one bad value; ExtensionBlocks 2026.10.9 (next release)
+- Its plugins get the RECmd plugin fixes (see RECmd and rla above): FTP shares in OpenSavePidlMRU and LastVisitedPidlMRU (Issues #261), Office 2010 MRUs, old Acrobat Reader recent files, Windows 7 TaskCache tasks, and no key lost to one bad value; ExtensionBlocks 2026.10.9 (2026.10.2)
 
 ### ⌨️ SBECmd
 
@@ -484,7 +487,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - Folders under -d that can't be read are reported ("Unable to read folder &lt;path&gt;: &lt;reason&gt;") and the rest is still processed; they were skipped silently
 - A --csv or --json that names an existing file stops with a message; it crashed with an unhandled exception
 - 0x2E root folder items with extension blocks (a known folder such as Downloads) are read; they were parse errors ("Index and count must refer to a location within the buffer"). Zip contents with data in bytes 4-9 are read (they were unknown types). ExtensionBlocks 2026.10.8, see above (2026.10.1)
-- FTP folders whose bytes 2-5 aren't 0 and find data items (OneDrive folders) are read: 280 of the 299 unknown items in the ShellBags test corpus parse now. ExtensionBlocks 2026.10.9, see above (next release)
+- FTP folders whose bytes 2-5 aren't 0 and find data items (OneDrive folders) are read: 280 of the 299 unknown items in the ShellBags test corpus parse now. ExtensionBlocks 2026.10.9, see above (2026.10.3)
 - The console messages are saved to &lt;yyyyMMddHHmmss&gt;\_SBECmd\_&lt;version&gt;\_ConsoleLog.txt (UTC time) in the --csv directory, else the --json one, a new file per run, instead of being added to !SBECmd\_Messages.txt; --co is on by default, --co false turns it off (Issues #259) (2026.10.2)
 
 ### 🖥️ SDB Explorer
@@ -537,7 +540,7 @@ once (and kept current) with [Get-ZimmermanTools](https://download.ericzimmerman
 - The Details window shows "Last interacted" for wrapper items (0x35, 0x36, 0x39, 0xB1, 0xB5) at MRU position 0, as the grid column already did; 0x36 items show Shell Type File in the grid and the details
 - Error reports and logged exceptions include source file and line numbers
 - Same shell item fixes as SBECmd: 0x2E root folder items with extension blocks and zip contents with data in bytes 4-9 (ExtensionBlocks 2026.10.8) (2026.10.1)
-- Same shell item fixes as SBECmd: FTP folders and find data items are read, and FTP URI items from file dialogs no longer fail (ExtensionBlocks 2026.10.9) (next release)
+- Same shell item fixes as SBECmd: FTP folders and find data items are read, and FTP URI items from file dialogs no longer fail (ExtensionBlocks 2026.10.9) (2026.10.2)
 
 ### ⌨️ SQLECmd
 
